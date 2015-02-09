@@ -4,8 +4,6 @@ var DinnerModel = function() {
 	var guests = 3;
 	var selectedDish = "Main";
 
-
-
 	// sets the number of guests
 	this.setNumberOfGuests = function(num) {
 		guests = num;
@@ -16,22 +14,18 @@ var DinnerModel = function() {
 		return numberOfGuests;
 	}
 
-
 	//Returns the dish that is on the menu for selected type 
 	this.getSelectedDish = function(type) {
 		for(type in dishes){
 			if(dishes[type].type == type){
 				return dishes[type];
 			}
-
 		}
-		
-
 	}
 
 	//Returns all the dishes on the menu.
 	this.getFullMenu = function() {
-		//TODO Lab 2
+		
 	}
 
 	//Returns all ingredients for all the dishes on the menu.
