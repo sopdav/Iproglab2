@@ -6,7 +6,16 @@ var DinnerModel = function() {
 
 
 	this.setNumberOfGuests = function(num) {
-		//TODO Lab 2
+		var dropdown = document.getElementById('dropdown');
+		var textbox = document.getElementById('textbox');
+		var select = dropdown.options[dropdown.selectedIndex];
+
+		if(a==0){
+			textbox.value = "please enter value";
+		}
+		else {
+			textbox.value = "Value recieved"; 
+		}
 	}
 
 	// should return 
