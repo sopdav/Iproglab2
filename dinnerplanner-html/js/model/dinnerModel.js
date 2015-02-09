@@ -1,24 +1,27 @@
 //DinnerModel Object constructor
 var DinnerModel = function() {
- 
-	//TODO Lab 2 implement the data structure that will hold number of guest
-	// and selected dinner options for dinner menu
+
+	var guests = 3;
+	var selectedDish = "Main";
 
 
+
+	// sets the number of guests
 	this.setNumberOfGuests = function(num) {
-		var dropdown = document.getElementById("dropdown").value;
-		document.getElementById("infomessage").innerHTML = "You selected: " + dropdown; 
-
+		guests = num;
 		}
 
-	// should return 
+	// returns the number of guests
 	this.getNumberOfGuests = function() {
-		//TODO Lab 2
+		return numberOfGuests;
 	}
+
 
 	//Returns the dish that is on the menu for selected type 
 	this.getSelectedDish = function(type) {
-		//TODO Lab 2
+		
+		
+
 	}
 
 	//Returns all the dishes on the menu.
