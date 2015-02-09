@@ -3,6 +3,7 @@ var DinnerModel = function() {
 
 	var numguests = 3;
 	var selectedDish = "Main";
+	var menu = [1,102,201];
 
 	// sets the number of guests
 	this.setNumberOfGuests = function(num) {
@@ -55,7 +56,7 @@ var DinnerModel = function() {
 	//Adds the passed dish to the menu. If the dish of that type already exists on the menu
 	//it is removed from the menu and the new one added.
 	this.addDishToMenu = function(id) {
-		//TODO Lab 2 
+		
 	}
 
 	//Removes dish from menu
