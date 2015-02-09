@@ -33,14 +33,13 @@ var DinnerModel = function() {
 
 	//Returns all ingredients for all the dishes on the menu.
 	this.getAllIngredients = function() {
-		var id = 1;
-		for(idlist in dishes){
-			if(dishes[idlist].id==id){
+		var ingredientslist= [];
 
-
-			}
-
+		for(key in dishes){
+			ingredientslist.push(dishes[key].ingredients);
 		}
+
+		return ingredientslist;
 	}
 
 	//Returns the total price of the menu (all the ingredients multiplied by number of guests).
