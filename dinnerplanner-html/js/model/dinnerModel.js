@@ -6,11 +6,10 @@ var DinnerModel = function() {
 
 
 	this.setNumberOfGuests = function(num) {
-		var dropdown = document.getElementById('dropdown');
+		var dropdown = document.getElementById('dropdown').value;
 		var textbox = document.getElementById('textbox');
-		var select = dropdown.options[dropdown.selectedIndex];
 
-		if(a==0){
+		if(dropdown==0){
 			textbox.value = "please enter value";
 		}
 		else {
