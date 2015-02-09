@@ -19,14 +19,14 @@ var DinnerModel = function() {
 
 	//Returns the dish that is on the menu for selected type 
 	this.getSelectedDish = function(type) {
-		for(type in dishes){
-			if(dishes[type].type == type){
-				return dishes[type];
+		var typelist = [];
+
+		for(key in dishes){
+			if(dishes[key].type == type){
+				typelist.push(dishes[key].name);
 			}
-
 		}
-		
-
+		return typelist;
 	}
 
 	//Returns all the dishes on the menu.
@@ -36,7 +36,14 @@ var DinnerModel = function() {
 
 	//Returns all ingredients for all the dishes on the menu.
 	this.getAllIngredients = function() {
-		//TODO Lab 2
+		var id = 1;
+		for(idlist in dishes){
+			if(dishes[idlist].id==id){
+
+
+			}
+
+		}
 	}
 
 	//Returns the total price of the menu (all the ingredients multiplied by number of guests).
