@@ -28,7 +28,7 @@ var DinnerModel = function() {
 		return typelist;
 	}
 
-	//Returns all the dishes on the menu.
+	//Returns all the dishes on the menu 
 	this.getFullMenu = function() {
 		var fullmenulist = [];
 
