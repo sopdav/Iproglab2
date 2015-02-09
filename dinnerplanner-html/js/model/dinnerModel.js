@@ -1,12 +1,12 @@
 //DinnerModel Object constructor
 var DinnerModel = function() {
 
-	var guests = 3;
+	var numguests = 3;
 	var selectedDish = "Main";
 
 	// sets the number of guests
 	this.setNumberOfGuests = function(num) {
-		guests = num;
+		numguests = num;
 		}
 
 	// returns the number of guests
