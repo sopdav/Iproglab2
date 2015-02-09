@@ -16,13 +16,6 @@ var DinnerModel = function() {
 
 	//Returns the dish that is on the menu for selected type 
 	this.getSelectedDish = function(type) {
-<<<<<<< HEAD
-		for(type in dishes){
-			if(dishes[type].type == type){
-				return dishes[type];
-			}
-		}
-=======
 		var typelist = [];
 
 		for(key in dishes){
@@ -31,7 +24,6 @@ var DinnerModel = function() {
 			}
 		}
 		return typelist;
->>>>>>> df58df638b71c188cc8952e29e0ed453558d3820
 	}
 
 	//Returns all the dishes on the menu.
