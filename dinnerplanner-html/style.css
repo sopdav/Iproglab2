@@ -11,3 +11,26 @@ html, body {
 
     visibility: hidden;
 }
+
+#selectdish #sidebar {
+	background-color: white;
+	color: black;
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 0px;
+	padding-right: 75px;
+	padding-bottom: 75px;
+
+	visibility: 
+}
+
+#selectdish #mainbar {
+	background-color: white;
+	color: black;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 0px;
+	padding-bottom: 75px;
+
+	visibility: 
+}
