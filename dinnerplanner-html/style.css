@@ -8,4 +8,6 @@ html, body {
     text-align: center;
 
     font-family: Helvetica;
+
+    visibility: hidden;
 }
