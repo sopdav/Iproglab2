@@ -18,7 +18,7 @@ h1 {
 
     text-align: left;
 
-    display: ;
+    display:none;
 }
 
 #createNewDinner {
@@ -34,27 +34,28 @@ h1 {
 	text-align: left;
 	padding-left: 0px;
 	padding-right: 75px;
+	padding-bottom: 320px;
 
 	
-	display: none;
+	display: ;
     float: left;
 }
 
 #selectdish #mainbar {
 	background-color: yellow;
 	color: black;
-	padding-left: 100px;
+	padding-left: 800px;
 
-	display: none;
+	display: ;
     float: left;
 }
 
 #selectdish #lowerbar {
 	background-color: red;
 	color: black;
-	padding-left: 100px;
+	padding-left: 325px;
 
-	display: none;
+	display: ;
     float: left;
 }
 
