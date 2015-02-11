@@ -1,9 +1,8 @@
 html, body {
-	background: url(../images/family.jpg);
+	background-image: url('images/family.jpg');
 	background-repeat: no-repeat;
-    border: none;
-    margin: 0px;
-    padding: 0px;
+	background-size: cover;
+
     text-align: center;
 
     font-family: Helvetica;
