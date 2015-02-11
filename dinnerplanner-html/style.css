@@ -13,7 +13,7 @@ h1 {
 #firstpage {
 	background-image: url('images/family.jpg');
 	background-size: cover;
-	border-style: solid;
+	border-style: 100%;
 	border-width: auto;
 	border-color: black;
 
