@@ -59,14 +59,7 @@ h1 {
     float: left;
 }
 
-#foodtable {
-	padding: 100px;
+.tablecell{
+	padding: 10px;
 
-	display: ;
-    float: left;
-
-}
-
-td {
-	padding: 100px;
 }
