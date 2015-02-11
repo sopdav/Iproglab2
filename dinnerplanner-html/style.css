@@ -25,7 +25,11 @@ h1 {
     padding-top: 130px;
 
     z-index: -1;
-    display:none;
+    display:;
+}
+
+#firstpage #firstbody{
+	background-color: white;
 }
 
 #selectdish #sidebar {
@@ -40,7 +44,7 @@ h1 {
 	padding-bottom: 320px;
 
 	
-	display:;
+	display:none;
     float: left;
 }
 
@@ -51,7 +55,8 @@ h1 {
 	border-color: black;
 	color: black;
 	padding-left: 200px;
-	display: ;
+	padding-bottom: 10px;
+	display: none;
     float: center;
 }
 
@@ -62,7 +67,7 @@ h1 {
 	border-color: black;
 	color: black;
 	padding-left: 325px;
-	display: ;
+	display: none;
     float: center;
 }
 
