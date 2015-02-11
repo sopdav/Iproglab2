@@ -57,10 +57,8 @@ h1 {
     float: left;
 }
 
-#selectdish #lowerbar #foodtable {
-	padding: 100px;
-
-	display: ;
-    float: left;
+.tablecell{
+	padding: 10px;
 
 }
+
