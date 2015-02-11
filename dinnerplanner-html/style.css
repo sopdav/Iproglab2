@@ -4,22 +4,30 @@ html, body {
 #firstpage {
 	background-image: url('images/family.jpg');
 	background-size: cover;
+	border-style: solid;
+	border-width: 5px;
+	border-color: black;
+	background-position: fixed;
 
     text-align: center;
 
     font-family: Helvetica;
 
-    display: none;
+    display: ;
 }
 
 #selectdish #sidebar {
-	background-color: white;
+	background-color: blue;
+	border-style: solid;
+	border-width: 5px;
+	border-color: black;
 	color: black;
 	text-align: left;
 	padding-left: 0px;
+	padding-right: 75px;
 
 	
-	/*display: none;*/
+	display: none;
     float: left;
 }
 
@@ -28,15 +36,15 @@ html, body {
 	color: black;
 	padding-left: 100px;
 
-	/*display: none;*/
+	display: none;
     float: left;
 }
 
 #selectdish #lowerbar {
-	background-color: white;
+	background-color: red;
 	color: black;
 	padding-left: 100px;
 
-	/*display: none;*/
+	display: none;
     float: left;
 }
