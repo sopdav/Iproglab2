@@ -25,10 +25,8 @@ h1 {
     padding-top: 130px;
 
     z-index: -1;
-}
 
-#createNewDinner {
-	position: center;
+    display: ;
 }
 
 #selectdish #sidebar {
@@ -55,7 +53,7 @@ h1 {
 	color: black;
 	padding-left: 200px;
 
-	display: ;
+	display: none;
     float: center;
 }
 
@@ -67,7 +65,7 @@ h1 {
 	color: black;
 	padding-left: 325px;
 
-	display: ;
+	display: none;
     float: center;
 }
 
