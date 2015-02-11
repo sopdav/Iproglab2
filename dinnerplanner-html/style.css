@@ -11,13 +11,12 @@ h1 {
 	text-align: center;
 }
 #firstpage {
-	background-image: url('images/family.jpg');
+	background: url('images/family.jpg') no-repeat center center fixed;
 	background-size: cover;
-	border-style: 100%;
-	border-width: auto;
+	border-style: solid;
 	border-color: black;
 
-    text-align: center;
+    text-align: left;
 
     display: ;
 }
