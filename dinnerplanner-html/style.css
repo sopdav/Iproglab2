@@ -1,6 +1,15 @@
 html, body {
  	font-family: Helvetica;
 }
+
+h1 {
+ 	display: block;
+	font-size: 55px;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	text-align: center;
+}
 #firstpage {
 	background-image: url('images/family.jpg');
 	background-size: cover;
@@ -46,4 +55,12 @@ html, body {
 
 	display: ;
     float: left;
+}
+
+#selectdish #lowerbar #foodtable {
+	padding: 100px;
+
+	display: ;
+    float: left;
+
 }
