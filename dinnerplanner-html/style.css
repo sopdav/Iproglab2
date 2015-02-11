@@ -11,14 +11,19 @@ h1 {
 	text-align: center;
 }
 #firstpage {
-	background: url('images/family.jpg') no-repeat center center fixed;
+	background: url('images/family.jpg') no-repeat center center;
 	background-size: cover;
-	border-style: solid;
-	border-color: black;
 
     text-align: left;
 
-    display:none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 130px;
+
+    z-index: -1;
 }
 
 #createNewDinner {
@@ -37,7 +42,7 @@ h1 {
 	padding-bottom: 320px;
 
 	
-	display: ;
+	display: none;
     float: left;
 }
 
@@ -46,7 +51,7 @@ h1 {
 	color: black;
 	padding-left: 800px;
 
-	display: ;
+	display: none;
     float: left;
 }
 
@@ -55,7 +60,7 @@ h1 {
 	color: black;
 	padding-left: 325px;
 
-	display: ;
+	display: none;
     float: left;
 }
 
