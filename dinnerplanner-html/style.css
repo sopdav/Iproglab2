@@ -51,8 +51,8 @@ h1 {
 	border-color: black;
 	color: black;
 	padding-left: 200px;
-
 	display:none;
+	display: none;
     float: center;
 }
 
@@ -63,8 +63,8 @@ h1 {
 	border-color: black;
 	color: black;
 	padding-left: 325px;
-
 	display:none;
+	display: none;
     float: center;
 }
 
