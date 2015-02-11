@@ -25,11 +25,7 @@ h1 {
     padding-top: 130px;
 
     z-index: -1;
-    display:;
-}
-
-#firstpage #firstbody{
-	background-color: white;
+    display: ;
 }
 
 #selectdish #sidebar {
@@ -42,10 +38,10 @@ h1 {
 	padding-left: 0px;
 	padding-right: 0px;
 	padding-bottom: 320px;
-
-	
-	display:none;
     float: left;
+	
+	display: none;
+
 }
 
 #selectdish #mainbar {
@@ -56,8 +52,9 @@ h1 {
 	color: black;
 	padding-left: 200px;
 	padding-bottom: 10px;
-	display: none;
+
     float: center;
+    display: none;
 }
 
 #selectdish #lowerbar {
@@ -67,8 +64,9 @@ h1 {
 	border-color: black;
 	color: black;
 	padding-left: 325px;
-	display: none;
+
     float: center;
+    display: none;
 }
 
 .tablecell{
