@@ -18,21 +18,25 @@ html, body {
 	text-align: left;
 	padding-left: 0px;
 
-	display: ;
+	
+	/*display: none;*/
+    float: left;
 }
 
 #selectdish #mainbar {
-	background-color: white;
+	background-color: yellow;
 	color: black;
-	padding-left: 200px;
+	padding-left: 100px;
 
-	visibility: 
+	/*display: none;*/
+    float: left;
 }
 
 #selectdish #lowerbar {
 	background-color: white;
 	color: black;
-	padding-left: 200px;
+	padding-left: 100px;
 
-	display: ;
+	/*display: none;*/
+    float: left;
 }
