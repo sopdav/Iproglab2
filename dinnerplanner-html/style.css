@@ -67,7 +67,7 @@ h1 {
 	border-color: black;
 	color: black;
 	padding-left: 325px;
-	display: ;
+	display: none;
     float: center;
 }
 
@@ -93,11 +93,31 @@ h1 {
 }
 
 #lasagne #middlebar {
+
+
 	display:;
     float: left;
 }
 
 #lasagne #rightbar {
 	display:;
-    float: left;
+    float: right;
 }
+
+#lasagne #middlebar #pilknapp {
+	background: #EFDC97;
+    border: solid;
+    display: inline-block;
+    font-weight: bold;
+    position: relative;
+}
+
+/*style="background-color:#EFDC97" */
+.ingredientstable {
+	background-color: #EFDC97;
+	padding: 100px;
+	border-style: solid;
+	border-color: black;
+
+}
+
