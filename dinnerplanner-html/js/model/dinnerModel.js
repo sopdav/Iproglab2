@@ -1,7 +1,7 @@
 //DinnerModel Object constructor
 var DinnerModel = function() {
 
-	var numguests = 3;
+	var numguests = 5;
 	var selectedDish = "Main";
 	var menu = [1,102,201];
 	var idmenu = 202;
