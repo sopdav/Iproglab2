@@ -12,6 +12,9 @@ html, body {
 	border-width: 5px;
 	text-align: center;
 }
+
+/* FÖRSTA SIDAN*/
+
 #firstpage {
 	background: url('images/family.jpg') no-repeat center center;
 	background-size: cover;
@@ -29,7 +32,7 @@ html, body {
     display:none;
 }
 
-
+/*ANDRA SIDAN*/
 
 #selectdish #sidebar {
 	background-color: white;
@@ -74,10 +77,10 @@ html, body {
 
 .tablecell{
 	padding: 10px;
-	border-style: solid;
-	border-color: black;
 
 }
+
+/*TREDJE SIDAN*/
 
 #lasagne #sidebar2 {
 	background-color: white;
@@ -110,12 +113,6 @@ html, body {
     float: right;
 }
 
-#lasagne #middlebar #pilknapp {
-	background-color: #EFDC97;
-    border: solid;
-}
-
-/*style="background-color:#EFDC97" */
 .ingredientstable {
 	background-color: #EFDC97;
 	padding: 100px;
@@ -123,6 +120,8 @@ html, body {
 	border-color: black;
 
 }
+
+/*FJÄRDE SIDAN*/
 
 #confirmdinner #sidebar3 {
 	background-color: white;
@@ -163,6 +162,8 @@ html, body {
     float: center;
 }
 
+/*FEMTE SIDAN*/
+
 #dinneroverview #mainbar3 {
 	background-color: #EFDC97;
 	color: black;
@@ -194,14 +195,15 @@ html, body {
 	position: absolute;
 	left: 45%;
 }
-.leftcell1{
+
+/*.leftcell1{
 
 	border-style: solid;
 	border-right: none;
 	border-bottom: none;
 	border-top: none;
 	border-left: none;
-}
+}*/
 
 .leftcell{
 
@@ -211,6 +213,7 @@ html, body {
 	border-top: none;
 	border-left-color: black;
 	padding-left: 10px;
+	border-width: 2px;
 }
 
 .editbutton {
@@ -222,7 +225,7 @@ html, body {
 
 }
 
-#line1{
+#dinneroverview #lowerbar3 #line1{
 	border-style: solid;
 	border-width: 2px;
 	border-color: black;
