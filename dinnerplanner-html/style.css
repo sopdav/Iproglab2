@@ -164,20 +164,20 @@ html, body {
 
 /*FEMTE SIDAN*/
 
-#dinneroverview #mainbar3 {
+#exampleView {
 	background-color: #EFDC97;
 	color: black;
 	font-size: 20px;
 	text-align: left;
 	padding-bottom: 10px;
 
-	display:none;
+	display:;
 	float: center;
 
 }
 
-#dinneroverview #lowerbar3 {
-	display: none;
+#lowerbar3 {
+	display: ;
 }
 
 .confirmbutton {
@@ -228,7 +228,7 @@ html, body {
 
 }
 
-#dinneroverview #lowerbar3 #line1{
+#exampleOverview #dinneroverview #lowerbar3 #line1{
 	border-style: solid;
 	border-width: 2px;
 	border-color: black;
@@ -243,7 +243,7 @@ html, body {
 	text-align: left;
 	padding-bottom: 10px;
 
-	display:;
+	display:none;
 	float: center;
 
 }

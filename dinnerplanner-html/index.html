@@ -323,42 +323,43 @@
 <!--HÄR BÖRJAR FEMTE SIDAN-->
 <div id="exampleView">
 	<div class="container-fluid" id="dinneroverview">		
-		<div  id="mainbar3">My Dinner: <span  id="numberOfGuests"></span>People
+		<div  id="mainbar3">My Dinner: <span  id="numberOfGuests"></span>&nbsp;People
 			<button class="editbutton" style="background-color:#EFDC97" type="button">Go back and edit dinner</button>
 		</div>
+	</div>	
+</div>
+
 		<div id="lowerbar3">
 			<div id="line1"></div>
+					<div>
+						<table id="foodtable" align="center" style="width:600px">
+							<tr>
+								<td class="tablecell"><img src="images/bakedbrie.jpg" height="145px" width="140px" style="border:3px solid black"></td>
+								<td class="tablecell"><img src="images/icecream.jpg" alt="Ice cream" style="border:3px solid black"></td>
+								<td class="tablecell"><img src="images/meatballs.jpg" alt="Meatballs" style="border:3px solid black"></td>
+								<td class="leftcell"></td>
+							</tr>
+							<tr>
+								<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Baked Brie</p></td>
+								<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Ice Cream</p></td>
+								<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Meat Balls</p></td>
+								<td class="leftcell">Total:</td>
+							</tr>
+							<tr>
+								<td class="tablecell">77.20 SEK</td>
+								<td class="tablecell">180.60 SEK</td>
+								<td class="tablecell">83.40 SEK</td>
+								<td class="leftcell">341.20 SEK</td>
+							</tr>
+						</table>
+					</div>
+			<div><hr id="line1"></div>
 			<div>
-			<table id="foodtable" align="center" style="width:600px">
-				<tr>
-					<td class="tablecell"><img src="images/bakedbrie.jpg" height="145px" width="140px" style="border:3px solid black"></td>
-					<td class="tablecell"><img src="images/icecream.jpg" alt="Ice cream" style="border:3px solid black"></td>
-					<td class="tablecell"><img src="images/meatballs.jpg" alt="Meatballs" style="border:3px solid black"></td>
-					<td class="leftcell"></td>
-				</tr>
-				<tr>
-					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Baked Brie</p></td>
-					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Ice Cream</p></td>
-					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Meat Balls</p></td>
-					<td class="leftcell">Total:</td>
-				</tr>
-				<tr>
-					<td class="tablecell">77.20 SEK</td>
-					<td class="tablecell">180.60 SEK</td>
-					<td class="tablecell">83.40 SEK</td>
-					<td class="leftcell">341.20 SEK</td>
-				</tr>
-			</table>
+				<button class="confirmbutton2" style="background-color:#FFC966" type="button" >Print Full Recipe</button>
 			</div>
-		<div>
-			<hr id="line1">
 		</div>
-		<div>
-			<button class="confirmbutton2" style="background-color:#FFC966" type="button" >Print Full Recipe</button>
-		</div>
-		</div>
-	</div>
-</div>
+	
+
 
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
