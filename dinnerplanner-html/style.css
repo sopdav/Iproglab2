@@ -2,10 +2,11 @@ html, body {
  	font-family: Helvetica;
 }
 
-h1 {
+.title {
 	background-color: #EFDC97;
+
  	display: block;
-	font-size: 55px;
+	font-size: 40px;
 	border-style: solid;
 	border-color: black;
 	border-width: 5px;
@@ -25,7 +26,7 @@ h1 {
     padding-top: 130px;
 
     z-index: -1;
-    display:;
+    display:none;
 }
 
 
@@ -67,6 +68,8 @@ h1 {
 	color: black;
 	padding-left: 325px;
 
+	display: none;
+
     float: center;
     display:none;
 }
@@ -90,7 +93,11 @@ h1 {
 	display:none;
     float: left;
 }
-#middlebar {
+
+
+
+
+#lasagne #middlebar {
 	display:none;
     float: left;
 }
@@ -99,3 +106,129 @@ h1 {
 	display:none;
     float: left;
 }
+
+#lasagne #rightbar {
+	position: absolute;
+	left: -10%;
+	right: 0%;
+
+
+	display:none;
+    float: right;
+}
+
+#lasagne #middlebar #pilknapp {
+	background-color: #EFDC97;
+    border: solid;
+}
+
+/*style="background-color:#EFDC97" */
+.ingredientstable {
+	background-color: #EFDC97;
+	padding: 100px;
+	border-style: solid;
+	border-color: black;
+
+}
+
+#confirmdinner #sidebar3 {
+	background-color: white;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	color: black;
+	text-align: left;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 320px;
+
+	
+	display:none;
+    float: left;
+}
+
+#confirmdinner #mainbar2 {
+	background-color: #EFDC97;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	color: black;
+	padding-left: 200px;
+	padding-bottom: 10px;
+	display:none;
+    float: center;
+}
+
+#confirmdinner #lowerbar2 {
+	background-color: white;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	color: black;
+	padding-left: 325px;
+	display:none;
+    float: center;
+}
+
+#mainbar3 {
+	background-color: #EFDC97;
+	color: black;
+	font-size: 20px;
+	text-align: left;
+	padding-bottom: 10px;
+
+	display:;
+	float: center;
+
+}
+
+.confirmbutton {
+	position: absolute;
+	left: 2.9%;
+}
+
+.confirmbutton1 {
+	position: absolute;
+	left: 17%;
+}
+
+
+.confirmbutton2 {
+	position: absolute;
+	left: 45%;
+}
+.leftcell1{
+
+	border-style: solid;
+	border-right: none;
+	border-bottom: none;
+	border-top: none;
+	border-left: none;
+}
+
+.leftcell{
+
+	border-style: solid;
+	border-right: none;
+	border-bottom: none;
+	border-top: none;
+	border-left-color: black;
+	padding-left: 10px;
+}
+
+.editbutton {
+	font-size: 15px;
+	position: absolute;
+	left: 80%;
+	right: 0%;
+	top: 10%;
+
+}
+
+#line1{
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+}
+
+

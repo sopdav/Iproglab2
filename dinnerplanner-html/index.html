@@ -5,17 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dinner planner</title>
-    		<h1>HOMELETTE <small><em>From the best chefs in the world directly to your kitchen</em></small></h1>
+    		
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
 
     <link rel='stylesheet' href='./style.css' type="text/css">
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+	<!-- The application JavaScript code -->
+	<script src="js/app.js"></script>
+	<script src="js/model/dinnerModel.js"></script>
+	<script src="js/view/exampleView.js"></script>
+	<script src="js/view/exampleViewController.js"></script>
 
 
   </head>
   <body>
+  	<div class="title">HOMELETTE <small><em>From the best chefs in the world directly to your kitchen</em></small></div>
+
 	<div class="container-fluid">
 		<div id="firstpage">			
 			<div>
@@ -40,16 +52,7 @@
 		</div>	
 	</div>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
-	<!-- The application JavaScript code -->
-	<script src="js/app.js"></script>
-	<script src="js/model/dinnerModel.js"></script>
-	<script src="js/view/exampleView.js"></script>
-	<script src="js/view/exampleViewController.js"></script>
 
   </body>
 
@@ -122,12 +125,261 @@
 					<td class="tablecell">text,text,text.text,text<br>text,text,text,text,text.<br>text,text,text.text,text.<br>text,text,text.text,text.</td><br>
 
 				</tr>
-
+				</table>
 		</div>
-
+	</div>
 
 	</body>
 
+
+
+<!--HÄR BÖRJAR LASAGNE!!!!!!!!!-->
+
+  	<div class="container-fluid" id="lasagne">
+  		<div class="col-md-2">
+
+		<div id="sidebar2">
+			My Dinner<br>
+			People
+
+			<select>
+				<option value="1" >1
+				<option value="2" >2
+				<option value="3" >3
+				<option value="4" >4
+				<option value="5" >5
+			</select>
+			<div>
+				<hr id="line1" width="150px" style="border:2px solid black">
+				<p style="border-style:solid; border-color:black; background-color:#EFDC97">Dish Name &nbsp;&nbsp;&nbsp;&nbsp; Cost </p>
+			</div>
+			
+			<p style="border-style:solid; border-color:black">Pending &nbsp;&nbsp;&nbsp;&nbsp; 77.20</p>
+			<hr id="line1" width="150px" style="border:2px solid black">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SEK 77.20<br>
+			<button type="button" class="confirmbutton1" style="background-color:#EFDC97; color:#68625E">Confirm Dinner </button>	
+		</div>
+		</div>
+
+		<div class="col-md-5">
+			<div id="middlebar">
+			<h2>LASAGNE</h2>
+
+			<table id"lasagnetable">
+				<tr>
+					<td class="tablecell"><img src="images/meatballs.jpg" alt="Meatballs" style="border:3px solid black" height="400px" width="450px"></td>
+				</tr><brr>
+				<tr>
+					<td class="tablecell">This is a wonderful and delicious lasagne alternative. This is a wonderful <br> 
+					and delicious lasagne alternative. This is a wonderful and delicious <br> lasagne alternative.</td>
+				</tr>
+				
+			</table>
+			<div><button id"pilknapp" type="button">back to Select Dish</button></div>
+			
+			<h2>PREPARATION</h2>
+
+			</div>
+		</div>
+
+		<div class="col-md-5">
+		<div id="rightbar">
+			<h2>&nbsp;</h2>
+
+			<table class="ingredientstable" height="400px" width="450px" style="border:3px solid black">
+			<thead>
+				<tr>
+					<th>INGREDIENTS FOR 4 PEOPLE</th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="width:50px; height:50px; line-height:50px; letter-spacing:300px; text-decoration: line-through;">&nbsp;</td>
+					<td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+					<td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+					<td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+					
+				</tr>
+				<tr>
+					<td>2 tbsl</td>
+					<td>olive oil</td>
+					<td>SEK</td>
+					<td>0.20</td>
+				</tr>
+				<tr>
+					<td>750 g</td>
+					<td>lean beef</td>
+					<td>SEK</td>
+					<td>50.00</td>
+				</tr>
+				<tr>
+					<td>2 tbsl</td>
+					<td>olive oil</td>
+					<td>SEK</td>
+					<td>0.20</td>
+				</tr>
+				<tr>
+					<td>750 g</td>
+					<td>lean beef</td>
+					<td>SEK</td>
+					<td>50.00</td>
+				</tr>
+				<tr>
+					<td>2 tbsl</td>
+					<td>olive oil</td>
+					<td>SEK</td>
+					<td>0.20</td>
+				</tr>
+				<tr>
+					<td>750 g</td>
+					<td>lean beef</td>
+					<td>SEK</td>
+					<td>50.00</td>
+				</tr>
+				<tr>
+					<td>2 tbsl</td>
+					<td>olive oil</td>
+					<td>SEK</td>
+					<td>0.20</td>
+				</tr>
+				<tr>
+					<td>750 g</td>
+					<td>lean beef</td>
+					<td>SEK</td>
+					<td>50.00</td>
+				</tr>
+				<tr>
+					<td style="width:50px; height:50px; line-height:50px; letter-spacing:300px; text-decoration: line-through;">&nbsp;</td>
+					<td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+					<td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+					<td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+					
+				</tr>
+				<tr>
+					<td><button type="button" style="background-color:#EFDC97">Confirm Dish </button></td>
+					<td>&nbsp;</td>
+					<td>SEK</td>
+					<td>77.20</td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		</div>
+	</div>
+
+<!--HÄR BÖRJAR FJÄRDE SIDAN!!!!!!!!!-->
+
+	<div class="container-fluid" id="confirmdinner">
+
+		<div id="sidebar3">
+			My Dinner<br>
+			People
+
+			<select>
+				<option value="1" >1
+				<option value="2" >2
+				<option value="3" >3
+				<option value="4" >4
+				<option value="5" >5
+			</select>
+			<div>
+				<hr id="line1" width="150px" style="border:2px solid black">
+				<p style="border-style:solid; border-color:black; background-color:#EFDC97"> Dish Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cost</p><br>
+			</div>
+			<div>
+			<p style="border-style:solid; width:150px; border-color:black; background-color:#D3D3D3;">4&nbsp;&nbsp;&nbsp;&nbsp;Lasagne&nbsp;&nbsp;&nbsp;&nbsp; 77.20</p><br>
+			</div>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pending&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.00<br>
+			<hr id="line1" width="150px" style="border:2px solid black">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEK&nbsp;&nbsp;&nbsp;&nbsp;77.20<br>
+			<button type="button" class="confirmbutton" style="background-color:#EFDC97">Confirm Dinner </button>	
+		</div>
+
+		<div id="mainbar2">
+			<h4>Select Dish</h4><br>
+			<hr id="line1">
+			<form>
+			<input placeholder="Enter key words">
+			<button style="background-color:#EFDC97" type="button">search</button>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<select>
+				<option value="Main" >Main
+				<option value="First course" >First course
+				<option value="Desert" >Desert
+			</select>
+
+		</div>
+
+		<div id="lowerbar2">
+
+			<table id="foodtable">
+				<tr>
+					<td class="tablecell"><img src="images/bakedbrie.jpg" height="145px" width="140px" style="border:3px solid black"></td>
+					<td class="tablecell"><img src="images/icecream.jpg" alt="Ice cream" style="border:3px solid black"></td>
+					<td class="tablecell"><img src="images/meatballs.jpg" alt="Meatballs" style="border:3px solid black"></td>
+					<td class="tablecell"><img src="images/sourdough.jpg" alt="Sourdough" style="border:3px solid black"></td>
+					<td class="tablecell"><img src="images/toast.jpg" alt="Toast" style="border:3px solid black"></td>
+				</tr><br>
+				<tr>
+					<td  class="tablecell"> <p style="border-style:solid; border-color:black; background-color:#EFDC97"> Baked Brie</p></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#EFDC97">Ice cream</p> </td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#EFDC97">Meat balls</p></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#EFDC97">Sour dough</p></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#EFDC97">Toast</p></td>
+				</tr><br>
+
+				<tr>
+					<td class="tablecell">text,text,text.text,text<br>text,text,text,text,text.<br>text,text,text.text,text.<br>text,text,text.text,text.</td><br>
+					<td class="tablecell">text,text,text.text,text<br>text,text,text,text,text.<br>text,text,text.text,text.<br>text,text,text.text,text.</td><br>
+					<td class="tablecell">text,text,text.text,text<br>text,text,text,text,text.<br>text,text,text.text,text.<br>text,text,text.text,text.</td><br>
+					<td class="tablecell">text,text,text.text,text<br>text,text,text,text,text.<br>text,text,text.text,text.<br>text,text,text.text,text.</td><br>
+					<td class="tablecell">text,text,text.text,text<br>text,text,text,text,text.<br>text,text,text.text,text.<br>text,text,text.text,text.</td><br>
+
+				</tr>
+				</table>
+		</div>
+	</div>
+
+<!--HÄR BÖRJAR FEMTE SIDAN-->
+
+		<div  id="mainbar3"> My Dinner:<div id="numberOfGuests"> people </div>
+			<button class="editbutton" style="background-color:#EFDC97" type="button">Go back and edit dinner</button>
+		</div>
+		<div id="line1"></div>
+		<div>
+			<table id="foodtable" align="center" style="width:600px">
+				<tr>
+					<td class="tablecell"><img src="images/bakedbrie.jpg" height="145px" width="140px" style="border:3px solid black"></td>
+					<td class="tablecell"><img src="images/icecream.jpg" alt="Ice cream" style="border:3px solid black"></td>
+					<td class="tablecell"><img src="images/meatballs.jpg" alt="Meatballs" style="border:3px solid black"></td>
+					<td class="leftcell1"></td>
+				</tr>
+				<tr>
+					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#EFDC97">Baked Brie</p></td>
+					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#EFDC97">Ice Cream</p></td>
+					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#EFDC97">Meat Balls</p></td>
+					<td class="leftcell">Total:</td>
+				</tr>
+				<tr>
+					<td class="tablecell">77.20 SEK</td>
+					<td class="tablecell">180.60 SEK</td>
+					<td class="tablecell">83.40 SEK</td>
+					<td class="leftcell">341.20 SEK</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<hr id="line1">
+		</div>
+		<div>
+			<button class="confirmbutton2" style="background-color:#EFDC97" type="button">Print Full Recipe</button>
+		</div>
+
+
+</body>
 
 
 
