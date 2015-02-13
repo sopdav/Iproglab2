@@ -13,15 +13,6 @@
     <link rel='stylesheet' href='./style.css' type="text/css">
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-
-	<!-- The application JavaScript code -->
-	<script src="js/app.js"></script>
-	<script src="js/model/dinnerModel.js"></script>
-	<script src="js/view/exampleView.js"></script>
-	<script src="js/view/exampleViewController.js"></script>
 
 
   </head>
@@ -183,7 +174,6 @@
 					<th></th>
 				</tr>
 			</thead>
-			<tbody>
 				<tr>
 					<td style="width:50px; height:50px; line-height:50px; letter-spacing:300px; text-decoration: line-through;">&nbsp;</td>
 					<td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
@@ -252,7 +242,6 @@
 					<td>SEK</td>
 					<td>77.20</td>
 				</tr>
-			</tbody>
 			</table>
 		</div>
 		</div>
@@ -334,7 +323,7 @@
 <!--HÄR BÖRJAR FEMTE SIDAN-->
 	<div class="container-fluid" id="dinneroverview">
 
-		<div  id="mainbar3"> My Dinner:<div id="numberOfGuests"> people </div>
+		<div  id="mainbar3">My Dinner: <span  id="numberOfGuests"></span>People
 			<button class="editbutton" style="background-color:#EFDC97" type="button">Go back and edit dinner</button>
 		</div>
 		<div id="lowerbar3">
@@ -369,6 +358,17 @@
 		</div>
 		</div>
 	</div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+	<!-- The application JavaScript code -->
+	<script src="js/app.js"></script>
+	<script src="js/model/dinnerModel.js"></script>
+	<script src="js/view/exampleView.js"></script>
+	<script src="js/view/exampleViewController.js"></script>
+
 
 
 </body>
