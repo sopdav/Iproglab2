@@ -52,14 +52,6 @@
 		</div>	
 	</div>
 
-
-
-  </body>
-
- 
-
-  <body>
-
   	<div class="container-fluid" id="selectdish">
 
 		<div id="sidebar">
@@ -73,9 +65,9 @@
 				<option value="4" >4
 				<option value="5" >5
 			</select>
-			<div style="background-color:#EFDC97">
+			<div>
 				<hr id="line1" width="150px" style="border:2px solid black">
-				Dish Name &nbsp;&nbsp;&nbsp;&nbsp; Cost<br>
+				<p style="border-style:solid; border-color:black; background-color:#D3D3D3">Dish Name &nbsp;&nbsp;&nbsp;&nbsp; Cost </p>
 			</div>
 			<hr id="line1" width="150px" style="border:2px solid black">
 			Pending &nbsp;&nbsp;&nbsp;&nbsp; 0.00<br>
@@ -108,13 +100,13 @@
 					<td class="tablecell"><img src="images/meatballs.jpg" alt="Meatballs" style="border:3px solid black"></td>
 					<td class="tablecell"><img src="images/sourdough.jpg" alt="Sourdough" style="border:3px solid black"></td>
 					<td class="tablecell"><img src="images/toast.jpg" alt="Toast" style="border:3px solid black"></td>
-				</tr><br>
+				</tr>
 				<tr>
-					<td class="tablecell">Baked Brie</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<td class="tablecell">Ice cream</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<td class="tablecell">Meat balls</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<td class="tablecell">Sour dough</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<td class="tablecell">Toast</td>
+					<td class="tablecell"> <p style="border-style:solid; border-color:black; background-color:#D3D3D3"> Baked Brie</p></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Ice cream</p> </td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Meat balls</p></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Sour dough</p></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Toast</p></td>
 				</tr><br>
 
 				<tr>
@@ -128,10 +120,6 @@
 				</table>
 		</div>
 	</div>
-
-	</body>
-
-
 
 <!--HÄR BÖRJAR LASAGNE!!!!!!!!!-->
 
@@ -151,7 +139,7 @@
 			</select>
 			<div>
 				<hr id="line1" width="150px" style="border:2px solid black">
-				<p style="border-style:solid; border-color:black; background-color:#EFDC97">Dish Name &nbsp;&nbsp;&nbsp;&nbsp; Cost </p>
+				<p style="border-style:solid; border-color:black; background-color:#D3D3D3">Dish Name &nbsp;&nbsp;&nbsp;&nbsp; Cost </p>
 			</div>
 			
 			<p style="border-style:solid; border-color:black">Pending &nbsp;&nbsp;&nbsp;&nbsp; 77.20</p>
@@ -344,12 +332,14 @@
 	</div>
 
 <!--HÄR BÖRJAR FEMTE SIDAN-->
+	<div class="container-fluid" id="dinneroverview">
 
 		<div  id="mainbar3"> My Dinner:<div id="numberOfGuests"> people </div>
 			<button class="editbutton" style="background-color:#EFDC97" type="button">Go back and edit dinner</button>
 		</div>
-		<div id="line1"></div>
-		<div>
+		<div id="lowerbar3">
+			<div id="line1"></div>
+			<div>
 			<table id="foodtable" align="center" style="width:600px">
 				<tr>
 					<td class="tablecell"><img src="images/bakedbrie.jpg" height="145px" width="140px" style="border:3px solid black"></td>
@@ -370,13 +360,15 @@
 					<td class="leftcell">341.20 SEK</td>
 				</tr>
 			</table>
-		</div>
+			</div>
 		<div>
 			<hr id="line1">
 		</div>
 		<div>
 			<button class="confirmbutton2" style="background-color:#EFDC97" type="button">Print Full Recipe</button>
 		</div>
+		</div>
+	</div>
 
 
 </body>

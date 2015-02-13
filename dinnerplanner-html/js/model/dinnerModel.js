@@ -13,6 +13,7 @@ var DinnerModel = function() {
 
 	// returns the number of guests
 	this.getNumberOfGuests = function() {
+		console.log(numguests);
 		return numguests;
 	}
 
@@ -67,24 +68,6 @@ var DinnerModel = function() {
 		return ingredientsprice;
 	}
 
-/*
-		for (var i = 0; i < menu.length; i++) {
-			menu[i];
-			for(key in dishes) {
-				if (dishes[key].id == menu[i]) {
-					for (var j = 0; j < dishes[key].ingredients.length; j++) {
-						ingredients[j];
-						totalprice.push(dishes[key].ingredients[j].price);
-					}
-				}
-				else {
-					i++;
-				}
-			}
-		}
-		return totalprice;
-*/
-
 	//Adds the passed dish to the menu. If the dish of that type already exists on the menu
 	//it is removed from the menu and the new one added.
 	this.addDishToMenu = function(id) {
@@ -108,7 +91,7 @@ var DinnerModel = function() {
 		idmenu = id;
 
 		for(var i = 0; i<menu.length; i++){
-			if(menu[i]==idmenu)
+			if(menu[i]==idmenu){
 				menu.splice(menu[i], 1);
 			}
 			else{
@@ -400,5 +383,6 @@ var DinnerModel = function() {
 			}]
 		}
 	];
+}
 
 }
