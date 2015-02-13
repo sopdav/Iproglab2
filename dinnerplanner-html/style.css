@@ -76,7 +76,24 @@ html, body {
 }
 
 .tablecell{
-	padding: 10px;
+	text-align: right; 
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+.namecell{
+	text-align: center; 
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+.lasagnecell{
+	text-align: left; 
+	padding-left: 0px;
+	padding-right: 10px;
+	padding-top: -10px;
 
 }
 
@@ -123,7 +140,7 @@ html, body {
 
 /*FJÄRDE SIDAN*/
 
-#confirmdinner #sidebar3 {
+#sidebar3 {
 	background-color: white;
 	border-style: solid;
 	border-width: 2px;
@@ -139,37 +156,37 @@ html, body {
     float: left;
 }
 
-#confirmdinner #mainbar2 {
+#mainbar2 {
 	background-color: #EFDC97;
 	border-style: solid;
 	border-width: 2px;
 	border-color: black;
 	color: black;
 	padding-left: 200px;
-	padding-bottom: 10px;
 	display:none;
     float: center;
 }
 
-#confirmdinner #lowerbar2 {
+ #lowerbar2 {
 	background-color: white;
 	border-style: solid;
 	border-width: 2px;
 	border-color: black;
 	color: black;
-	padding-left: 325px;
+	padding-left:325px;
+
 	display:none;
-    float: center;
 }
 
-/*FEMTE SIDAN*/
 
-#exampleView {
+/*FEMTE SIDAN samt SJÄTTE SIDAN*/
+
+#exampleView #dinneroverview{
 	background-color: #EFDC97;
 	color: black;
 	font-size: 20px;
 	text-align: left;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 
 	display:;
 	float: center;
@@ -177,7 +194,7 @@ html, body {
 }
 
 #lowerbar3 {
-	display: ;
+	display:none;
 }
 
 .confirmbutton {
@@ -193,20 +210,12 @@ html, body {
 
 .confirmbutton2 {
 	position: absolute;
-	left: 45%;
+	left: 40%;
 	width: 300px;
 	height: 60px;
 	font-weight: bold;
+	display:none;
 }
-
-/*.leftcell1{
-
-	border-style: solid;
-	border-right: none;
-	border-bottom: none;
-	border-top: none;
-	border-left: none;
-}*/
 
 .leftcell{
 
@@ -227,25 +236,37 @@ html, body {
 	top: 10%;
 
 }
-
-#exampleOverview #dinneroverview #lowerbar3 #line1{
+.line1{
 	border-style: solid;
-	border-width: 2px;
+	border-width: 3px;
 	border-color: black;
 }
 
 /*SJÄTTE SIDAN*/
 
-#printrecipe #mainbar4 {
-	background-color: #EFDC97;
-	color: black;
+#lowerbar4 {
+	display:;
+}
+
+.pictable {
+	text-align: center;
+	padding: 10px;
+}
+
+.headertable {
+	font-weight: bold;
+	font-size: 30px;
+	padding: 10px;
+}
+
+.texttable {
+	font-size: 10px;
+	padding: 10px;
+}
+
+.header2table {
 	font-size: 20px;
-	text-align: left;
-	padding-bottom: 10px;
-
-	display:none;
-	float: center;
-
+	padding: 10px;
 }
 
 

@@ -14,8 +14,19 @@
 
     <!-- jQuery -->
 
+     <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+	<!-- The application JavaScript code -->
+	<script src="js/app.js"></script>
+	<script src="js/model/dinnerModel.js"></script>
+	<script src="js/view/exampleView.js"></script>
+	<script src="js/view/exampleViewController.js"></script>
+
 
   </head>
+
   <body>
   	<div class="title">HOMELETTE <small><em>From the best chefs in the world directly to your kitchen</em></small></div>
 
@@ -26,7 +37,7 @@
 					<tr>
 						<td>
 							<h3>A home dinner service</h3>
-							<hr id="line1" width="500px" style="border:2px solid black">
+							<hr class="line1" width="500px" style="border:2px solid black">
 							Welcome to the dinner planner, the ultimate way for you to plan all of your dinner parties in the most efficent way possible. The dinner planner helps you plan each step from chosing the dish, to shopping the ingredients to actually preparing the meal, it contains everything you need.
 						</td>
 					</tr><br>
@@ -57,12 +68,12 @@
 				<option value="5" >5
 			</select>
 			<div>
-				<hr id="line1" width="150px" style="border:2px solid black">
+				<hr class="line1" width="150px" style="border:2px solid black">
 				<p style="border-style:solid; border-color:black; background-color:#D3D3D3">Dish Name &nbsp;&nbsp;&nbsp;&nbsp; Cost </p>
 			</div>
-			<hr id="line1" width="150px" style="border:2px solid black">
+			<hr class="line1" width="150px" style="border:2px solid black">
 			Pending &nbsp;&nbsp;&nbsp;&nbsp; 0.00<br>
-			<hr id="line1" width="150px" style="border:2px solid black">
+			<hr class="line1" width="150px" style="border:2px solid black">
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SEK 0.00<br>
 			<button type="button" style="background-color:#EFDC97; color:#68625E">Confirm Dinner </button>	
 		</div>
@@ -112,200 +123,204 @@
 		</div>
 	</div>
 
-<!--HÄR BÖRJAR LASAGNE!!!!!!!!!-->
+    <!--HÄR BÖRJAR LASAGNE!!!!!!!!!-->
 
-  	<div class="container-fluid" id="lasagne">
-  		<div class="col-md-2">
+    <div class="container-fluid" id="lasagne">
+        <div class="col-md-2">
 
-		<div id="sidebar2">
-			My Dinner<br>
-			People
+            <div id="sidebar2">
+                My Dinner
+                <br> People
 
-			<select>
-				<option value="1" >1
-				<option value="2" >2
-				<option value="3" >3
-				<option value="4" >4
-				<option value="5" >5
-			</select>
-			<div>
-				<hr id="line1" width="150px" style="border:2px solid black">
-				<p style="border-style:solid; border-color:black; background-color:#D3D3D3">Dish Name &nbsp;&nbsp;&nbsp;&nbsp; Cost </p>
-			</div>
-			
-			<p style="border-style:solid; border-color:black">Pending &nbsp;&nbsp;&nbsp;&nbsp; 77.20</p>
-			<hr id="line1" width="150px" style="border:2px solid black">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SEK 77.20<br>
-			<button type="button" class="confirmbutton1" style="background-color:#EFDC97; color:#68625E">Confirm Dinner </button>	
-		</div>
-		</div>
+                <select>
+                    <option value="1">1
+                        <option value="2">2
+                            <option value="3">3
+                                <option value="4">4
+                                    <option value="5">5
+                </select>
+                <div>
+                    <hr id="line1" width="150px" style="border:2px solid black">
+                    <p style="border-style:solid; border-color:black; background-color:#D3D3D3">Dish Name &nbsp;&nbsp;&nbsp;&nbsp; Cost </p>
+                </div>
 
-		<div class="col-md-5">
-			<div id="middlebar">
-			<h2>LASAGNE</h2>
+                <p style="border-style:solid; border-color:black">Pending &nbsp;&nbsp;&nbsp;&nbsp; 77.20</p>
+                <hr id="line1" width="150px" style="border:2px solid black"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SEK 77.20
+                <br>
+                <button type="button" class="confirmbutton1" style="background-color:#EFDC97; color:#68625E">Confirm Dinner </button>
+            </div>
+        </div>
 
-			<table id"lasagnetable">
-				<tr>
-					<td class="tablecell"><img src="images/meatballs.jpg" alt="Meatballs" style="border:3px solid black" height="400px" width="450px"></td>
-				</tr><brr>
-				<tr>
-					<td class="tablecell">This is a wonderful and delicious lasagne alternative. This is a wonderful <br> 
-					and delicious lasagne alternative. This is a wonderful and delicious <br> lasagne alternative.</td>
-				</tr>
-				
-			</table>
-			<div><button type="button" style="background-color:#EFDC97">back to Select Dish</button></div>
-			
-			<h2>PREPARATION</h2>
+        <div class="col-md-5">
+            <div id="middlebar">
+                <h2>LASAGNE</h2>
 
-			</div>
-		</div>
+                <table id "lasagnetable">
+                    <tr>
+                        <td class="lasagnecell"><img src="images/meatballs.jpg" alt="Meatballs" style="border:3px solid black" height="400px" width="450px">
+                        </td>
+                    </tr>
+                    <brr>
+                        <tr>
+                            <td class="lasagnecell">This is a wonderful and delicious lasagne alternative. This is a wonderful
+                                <br> and delicious lasagne alternative. This is a wonderful and delicious
+                                <br> lasagne alternative.</td>
+                        </tr>
 
-		<div class="col-md-5">
-		<div id="rightbar">
-			<h2>&nbsp;</h2>
+                </table>
+                <div>
+                    <button type="button" style="background-color:#EFDC97">back to Select Dish</button>
+                </div>
 
-			<table class="ingredientstable" height="400px" width="450px" style="border:3px solid black">
-			<thead>
-				<tr>
-					<th>INGREDIENTS FOR 4 PEOPLE</th>
-					<th></th>
-					<th></th>
-					<th></th>
-				</tr>
-			</thead>
-				<tr>
-					<td style="width:50px; height:50px; line-height:50px; letter-spacing:300px; text-decoration: line-through;">&nbsp;</td>
-					<td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
-					<td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
-					<td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
-					
-				</tr>
-				<tr>
-					<td>2 tbsl</td>
-					<td>olive oil</td>
-					<td>SEK</td>
-					<td>0.20</td>
-				</tr>
-				<tr>
-					<td>750 g</td>
-					<td>lean beef</td>
-					<td>SEK</td>
-					<td>50.00</td>
-				</tr>
-				<tr>
-					<td>2 tbsl</td>
-					<td>olive oil</td>
-					<td>SEK</td>
-					<td>0.20</td>
-				</tr>
-				<tr>
-					<td>750 g</td>
-					<td>lean beef</td>
-					<td>SEK</td>
-					<td>50.00</td>
-				</tr>
-				<tr>
-					<td>2 tbsl</td>
-					<td>olive oil</td>
-					<td>SEK</td>
-					<td>0.20</td>
-				</tr>
-				<tr>
-					<td>750 g</td>
-					<td>lean beef</td>
-					<td>SEK</td>
-					<td>50.00</td>
-				</tr>
-				<tr>
-					<td>2 tbsl</td>
-					<td>olive oil</td>
-					<td>SEK</td>
-					<td>0.20</td>
-				</tr>
-				<tr>
-					<td>750 g</td>
-					<td>lean beef</td>
-					<td>SEK</td>
-					<td>50.00</td>
-				</tr>
-				<tr>
-					<td style="width:50px; height:50px; line-height:50px; letter-spacing:300px; text-decoration: line-through;">&nbsp;</td>
-					<td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
-					<td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
-					<td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
-					
-				</tr>
-				<tr>
-					<td><button type="button" style="background-color:#EFDC97">Confirm Dish </button></td>
-					<td>&nbsp;</td>
-					<td>SEK</td>
-					<td>77.20</td>
-				</tr>
-			</table>
-		</div>
-		</div>
-	</div>
+                <h2>PREPARATION</h2>
+
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div id="rightbar">
+                <h2>&nbsp;</h2>
+
+                <table class="ingredientstable" height="400px" width="450px" style="border:3px solid black">
+                    <thead>
+                        <tr>
+                            <th>INGREDIENTS FOR 4 PEOPLE</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td style="width:50px; height:50px; line-height:50px; letter-spacing:300px; text-decoration: line-through;">&nbsp;</td>
+                        <td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+                        <td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+                        <td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td>2 tbsl</td>
+                        <td>olive oil</td>
+                        <td>SEK</td>
+                        <td>0.20</td>
+                    </tr>
+                    <tr>
+                        <td>750 g</td>
+                        <td>lean beef</td>
+                        <td>SEK</td>
+                        <td>50.00</td>
+                    </tr>
+                    <tr>
+                        <td>2 tbsl</td>
+                        <td>olive oil</td>
+                        <td>SEK</td>
+                        <td>0.20</td>
+                    </tr>
+                    <tr>
+                        <td>750 g</td>
+                        <td>lean beef</td>
+                        <td>SEK</td>
+                        <td>50.00</td>
+                    </tr>
+                    <tr>
+                        <td>2 tbsl</td>
+                        <td>olive oil</td>
+                        <td>SEK</td>
+                        <td>0.20</td>
+                    </tr>
+                    <tr>
+                        <td>750 g</td>
+                        <td>lean beef</td>
+                        <td>SEK</td>
+                        <td>50.00</td>
+                    </tr>
+                    <tr>
+                        <td>2 tbsl</td>
+                        <td>olive oil</td>
+                        <td>SEK</td>
+                        <td>0.20</td>
+                    </tr>
+                    <tr>
+                        <td>750 g</td>
+                        <td>lean beef</td>
+                        <td>SEK</td>
+                        <td>50.00</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px; height:50px; line-height:50px; letter-spacing:300px; text-decoration: line-through;">&nbsp;</td>
+                        <td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+                        <td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+                        <td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" style="background-color:#EFDC97">Confirm Dish </button>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>SEK</td>
+                        <td>77.20</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 
 <!--HÄR BÖRJAR FJÄRDE SIDAN!!!!!!!!!-->
 
-	<div class="container-fluid" id="confirmdinner">
+	<div id="sidebar3">
+				My Dinner<br>
+				People
 
-		<div id="sidebar3">
-			My Dinner<br>
-			People
+				<select>
+					<option value="1" >1
+					<option value="2" >2
+					<option value="3" >3
+					<option value="4" >4
+					<option value="5" >5
+				</select>
+					<div>
+						<hr class="line1" width="150px" style="border:2px solid black">
+						<p style="border-style:solid; border-color:black; background-color:#D3D3D3"> Dish Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cost</p><br>
+					</div>
+					<div>
+					<p style="border-style:solid; width:150px; border-color:black; background-color:#F0F0F0;">4&nbsp;&nbsp;&nbsp;&nbsp;Lasagne&nbsp;&nbsp;&nbsp;&nbsp; 77.20</p><br>
+					</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pending&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.00<br>
+				<hr class="line1" width="150px" style="border:2px solid black">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEK&nbsp;&nbsp;&nbsp;&nbsp;77.20<br>
+				<button type="button" class="confirmbutton" style="background-color:#EFDC97">Confirm Dinner </button>	
+	</div>
 
-			<select>
-				<option value="1" >1
-				<option value="2" >2
-				<option value="3" >3
-				<option value="4" >4
-				<option value="5" >5
-			</select>
-			<div>
-				<hr id="line1" width="150px" style="border:2px solid black">
-				<p style="border-style:solid; border-color:black; background-color:#D3D3D3"> Dish Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cost</p><br>
-			</div>
-			<div>
-			<p style="border-style:solid; width:150px; border-color:black; background-color:#F0F0F0;">4&nbsp;&nbsp;&nbsp;&nbsp;Lasagne&nbsp;&nbsp;&nbsp;&nbsp; 77.20</p><br>
-			</div>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pending&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.00<br>
-			<hr id="line1" width="150px" style="border:2px solid black">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEK&nbsp;&nbsp;&nbsp;&nbsp;77.20<br>
-			<button type="button" class="confirmbutton" style="background-color:#EFDC97">Confirm Dinner </button>	
-		</div>
+	<div id="mainbar2">
+				<h4>Select Dish</h4><br>
+				<hr class="line1">
+				<form>
+				<input placeholder="Enter key words">
+				<button style="background-color:#EFDC97" type="button">search</button>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<select>
+					<option value="Main" >Main
+					<option value="First course" >First course
+					<option value="Desert" >Desert
+				</select>
 
-		<div id="mainbar2">
-			<h4>Select Dish</h4><br>
-			<hr id="line1">
-			<form>
-			<input placeholder="Enter key words">
-			<button style="background-color:#EFDC97" type="button">search</button>
-			&nbsp;&nbsp;&nbsp;&nbsp;
-			<select>
-				<option value="Main" >Main
-				<option value="First course" >First course
-				<option value="Desert" >Desert
-			</select>
+	</div>
 
-		</div>
-
-		<div id="lowerbar2">
-
+	<div id="lowerbar2">
 			<table id="foodtable">
 				<tr>
-					<td class="tablecell"><img src="images/bakedbrie.jpg" height="145px" width="140px" style="border:3px solid black"></td>
+					<td class="tablecell"><img src="images/bakedbrie.jpg" height="145px" width="145px" style="border:3px solid black"></td>
 					<td class="tablecell"><img src="images/icecream.jpg" alt="Ice cream" style="border:3px solid black"></td>
 					<td class="tablecell"><img src="images/meatballs.jpg" alt="Meatballs" style="border:3px solid black"></td>
 					<td class="tablecell"><img src="images/sourdough.jpg" alt="Sourdough" style="border:3px solid black"></td>
 					<td class="tablecell"><img src="images/toast.jpg" alt="Toast" style="border:3px solid black"></td>
 				</tr><br>
 				<tr>
-					<td  class="tablecell"> <p style="border-style:solid; border-color:black; background-color:#D3D3D3"> Baked Brie</p></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Ice cream</p> </td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Meat balls</p></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Sour dough</p></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Toast</p></td>
+					<td class="namecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3"> Baked Brie</p></td>
+					<td class="namecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Ice cream</p> </td>
+					<td class="namecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Meat balls</p></td>
+					<td class="namecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Sour dough</p></td>
+					<td class="namecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Toast</p></td>
 				</tr><br>
 
 				<tr>
@@ -316,9 +331,9 @@
 					<td class="tablecell">text,text,text.text,text<br>text,text,text,text,text.<br>text,text,text.text,text.<br>text,text,text.text,text.</td><br>
 
 				</tr>
-				</table>
-		</div>
+			</table>
 	</div>
+
 
 <!--HÄR BÖRJAR FEMTE SIDAN-->
 <div id="exampleView">
@@ -330,19 +345,19 @@
 </div>
 
 		<div id="lowerbar3">
-			<div id="line1"></div>
-					<div>
-						<table id="foodtable" align="center" style="width:600px">
+			<div class="line1"></div>
+			<br>
+						<table id="foodtable" align="center" style="width:700px">
 							<tr>
-								<td class="tablecell"><img src="images/bakedbrie.jpg" height="145px" width="140px" style="border:3px solid black"></td>
-								<td class="tablecell"><img src="images/icecream.jpg" alt="Ice cream" style="border:3px solid black"></td>
-								<td class="tablecell"><img src="images/meatballs.jpg" alt="Meatballs" style="border:3px solid black"></td>
+								<td class="tablecell"><img src="images/bakedbrie.jpg" height="170px" width="170px" style="border:3px solid black"></td>
+								<td class="tablecell"><img src="images/icecream.jpg" width="170px" alt="Ice cream" style="border:3px solid black"></td>
+								<td class="tablecell"><img src="images/meatballs.jpg" width="170px" alt="Meatballs" style="border:3px solid black"></td>
 								<td class="leftcell"></td>
 							</tr>
 							<tr>
-								<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Baked Brie</p></td>
-								<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Ice Cream</p></td>
-								<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Meat Balls</p></td>
+								<td class="namecell" width="170px"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Baked Brie</p></td>
+								<td class="namecell" width="170px"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Ice Cream</p></td>
+								<td class="namecell" width="170px"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Meat Balls</p></td>
 								<td class="leftcell">Total:</td>
 							</tr>
 							<tr>
@@ -351,43 +366,53 @@
 								<td class="tablecell">83.40 SEK</td>
 								<td class="leftcell">341.20 SEK</td>
 							</tr>
-						</table>
-					</div>
-			<div><hr id="line1"></div>
-			<div>
-				<button class="confirmbutton2" style="background-color:#FFC966" type="button" >Print Full Recipe</button>
-			</div>
+						</table>		
 		</div>
+		
+		<div><hr class="line1"></div>
+		<div>
+			<button class="confirmbutton2" style="background-color:#FFC966" type="button" >Print Full Recipe</button>
+		</div>
+		
 	
 
 
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-
-	<!-- The application JavaScript code -->
-	<script src="js/app.js"></script>
-	<script src="js/model/dinnerModel.js"></script>
-	<script src="js/view/exampleView.js"></script>
-	<script src="js/view/exampleViewController.js"></script>
-
 
 <!--HÄR BÖRJAR SJÄTTE SIDAN-->
+<!--div id="exampleView">
 	<div class="container-fluid" id="printrecipe">
-		<div  id="mainbar4"> My Dinner:<div id="numberOfGuests"> people </div>
+		<div id="mainbar4">My Dinner: <span id="numberOfGuests2"></span>&nbsp;People
 			<button class="editbutton" style="background-color:#FFC966" type="button">Go back and edit dinner</button>
 		</div>
-
-		<div class="col-md-6">
-			<div id="lowerbar4">
-			<table id="recipe"></table>
-			
-			</div>
-		</div>
-		
 	</div>
+</div-->
 
-
+<div id="lowerbar4">
+	<br>
+	<table id="recipe">
+		<tr>
+			<td class="pictable" width="100px" rowspan="2"><img src="images/icecream.jpg" alt="Ice cream" style="border:3px solid black"></td>
+			<td class="headertable" width="250px"><p>LASAGNE</p></td>
+			<td class="header2table" width="400px"><p>PREPARATION</p></td>
+				<tr>
+					<td class="texttable"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></td>
+					<td class="texttable"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></td>
+				</tr>
+			
+		</tr>
+		<tr>
+			<td class="pictable" width="100px" rowspan="2"><img src="images/meatballs.jpg" alt="Meatballs" style="border:3px solid black"></td>
+			<td class="headertable" width="250px"><p>FIORENTINA</p></td>
+			<td class="header2table" width="400px"><p>PREPARATION</p></td>
+				<tr>
+					<td class="texttable"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></td>
+					<td class="texttable"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></td>
+				</tr>
+		</tr>
+	</table>
+</div>
+	
+	
 </body>
 
 
