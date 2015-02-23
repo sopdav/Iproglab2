@@ -64,3 +64,94 @@
 				</select>
 
 	</div-->
+
+
+lasange
+
+	        <div class="col-md-5">
+            <div id="rightbar">
+                <h2>&nbsp;</h2>
+
+                <table class="ingredientstable" height="400px" width="450px" style="border:3px solid black">
+                    <thead>
+                        <tr>
+                            <th>INGREDIENTS FOR 4 PEOPLE</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td style="width:50px; height:50px; line-height:50px; letter-spacing:300px; text-decoration: line-through;">&nbsp;</td>
+                        <td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+                        <td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+                        <td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td>2 tbsl</td>
+                        <td>olive oil</td>
+                        <td>SEK</td>
+                        <td>0.20</td>
+                    </tr>
+                    <tr>
+                        <td>750 g</td>
+                        <td>lean beef</td>
+                        <td>SEK</td>
+                        <td>50.00</td>
+                    </tr>
+                    <tr>
+                        <td>2 tbsl</td>
+                        <td>olive oil</td>
+                        <td>SEK</td>
+                        <td>0.20</td>
+                    </tr>
+                    <tr>
+                        <td>750 g</td>
+                        <td>lean beef</td>
+                        <td>SEK</td>
+                        <td>50.00</td>
+                    </tr>
+                    <tr>
+                        <td>2 tbsl</td>
+                        <td>olive oil</td>
+                        <td>SEK</td>
+                        <td>0.20</td>
+                    </tr>
+                    <tr>
+                        <td>750 g</td>
+                        <td>lean beef</td>
+                        <td>SEK</td>
+                        <td>50.00</td>
+                    </tr>
+                    <tr>
+                        <td>2 tbsl</td>
+                        <td>olive oil</td>
+                        <td>SEK</td>
+                        <td>0.20</td>
+                    </tr>
+                    <tr>
+                        <td>750 g</td>
+                        <td>lean beef</td>
+                        <td>SEK</td>
+                        <td>50.00</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px; height:50px; line-height:50px; letter-spacing:300px; text-decoration: line-through;">&nbsp;</td>
+                        <td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+                        <td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+                        <td style="width:50px; height:50px; line-height:50px; letter-spacing:100px; text-decoration: line-through;">&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" style="background-color:#EFDC97">Confirm Dish </button>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>SEK</td>
+                        <td>77.20</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
