@@ -1,3 +1,3 @@
-var selectDishControllerView = function(view, model) {
+var SelectDishControllerView = function(view, model) {
 
 }

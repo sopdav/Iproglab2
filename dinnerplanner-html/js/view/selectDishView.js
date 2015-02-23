@@ -1,4 +1,4 @@
-var selectDishView = function (container, model){
+var SelectDishView = function (container, model){
 	// Here we load the dishes
 	this.starter = container.find("#starters");
 	this.main = container.find("mains");
