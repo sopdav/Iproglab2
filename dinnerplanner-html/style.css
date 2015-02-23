@@ -46,7 +46,7 @@ html, body {
 	padding-bottom: 320px;
     float: left;
 	
-	display:none;
+	display:;
 
 }
 
@@ -60,7 +60,7 @@ html, body {
 	padding-bottom: 10px;
 
     float: center;
-    display:none;
+    display:;
 }
 
 #selectdish #lowerbar {
@@ -72,7 +72,7 @@ html, body {
 	padding-left: 325px;
 
     float: center;
-    display:none;
+    display:;
 }
 
 .tablecell{
@@ -188,13 +188,13 @@ html, body {
 	text-align: left;
 	padding-bottom: 20px;
 
-	display:;
+	display:none;
 	float: center;
 
 }
 
 #lowerbar3 {
-	display:;
+	display:none;
 }
 
 .confirmbutton {
@@ -214,7 +214,7 @@ html, body {
 	width: 300px;
 	height: 60px;
 	font-weight: bold;
-	display:;
+	display:none;
 }
 
 .leftcell{
