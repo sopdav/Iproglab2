@@ -1,4 +1,7 @@
 $(function() {
+	window.stage = "starter";
+	window.stage = "main";
+	window.stage = "dessert";
 
 	//We instantiate our model
 	var model = new DinnerModel();
@@ -7,6 +10,7 @@ $(function() {
 	var exampleView = new ExampleView($("#exampleView"), model);
 
 	// Controllers for Select Dish View
-	var selectDishView = new selectDishView($(#selectDishView), model);
+	var selectDishView = new SelectDishView($("#selectDishView"), model);
+	var selectDishControllerView = new selectDishControllerView(selectDishView, model);
 
 });
