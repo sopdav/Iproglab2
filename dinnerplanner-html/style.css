@@ -15,7 +15,7 @@ html, body {
 
 /* FÖRSTA SIDAN*/
 
-#firstpage {
+#firstpageView {
 	background: url('images/family.jpg') no-repeat center center;
 	background-size: cover;
 
@@ -29,7 +29,6 @@ html, body {
     padding-top: 130px;
 
     z-index: -1;
-    display:none;
 }
 
 /*ANDRA SIDAN*/
@@ -45,8 +44,7 @@ html, body {
 	padding-right: 0px;
 	padding-bottom: 320px;
     float: left;
-	
-	display:;
+
 
 }
 
@@ -60,7 +58,6 @@ html, body {
 	padding-bottom: 10px;
 
     float: center;
-    display:;
 }
 
 #selectdish #lowerbar {
@@ -72,7 +69,6 @@ html, body {
 	padding-left: 325px;
 
     float: center;
-    display:;
 }
 
 .tablecell{
