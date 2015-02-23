@@ -17,4 +17,8 @@ $(function() {
 	var sidebarView = new SidebarView($("#sidebarView"), model);
 	var sidebarControllerView = new SidebarControllerView(sidebarView, model);
 
+	// Controllers for NumberOfGuests
+	var numberOfGuestsView = new NumberOfGuestsView($("#numberOfGuestsView"), model);
+	var numberOfGuestsControllerView = new NumberOfGuestsControllerView(numberOfGuestsView, model);
+
 });
