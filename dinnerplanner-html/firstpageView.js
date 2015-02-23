@@ -1,4 +1,0 @@
-$("#createnewdinner").click(function){
-	$('#firstpageview')
-
-}

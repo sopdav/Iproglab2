@@ -7,6 +7,6 @@ $(function() {
 	var exampleView = new ExampleView($("#exampleView"), model);
 
 	// Controllers for Select Dish View
-	var selectDishView = new selectDishView($(#selectDishView), model);
+	var selectDishView = new SelectDishView($("#selectDishView"), model);
 
 });
