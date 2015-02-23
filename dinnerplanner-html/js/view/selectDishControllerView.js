@@ -28,5 +28,14 @@ var SelectDishControllerView = function(view, model) {
 		}
 	});
 
-	// INSERT CODE HERE
+	// Goes through the list called "thelist" in selectDishView
+	for (var i = 0; i < $('#thelist div').length; i++) {
+		var current = $('#thelist div')[i];
+		current.onclick = function() {
+			$('#selectDishView').hide();
+			$('#mainbar').hide();
+			$('#lasagneView').show();
+			model.setClickDishId(this.id);
+		}
+	};
 }
