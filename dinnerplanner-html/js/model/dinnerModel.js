@@ -1,10 +1,20 @@
 //DinnerModel Object constructor
 var DinnerModel = function() {
 
-	var numguests = 5;
-	var selectedDish = "Main";
-	var menu = [1,102,201];
-	var idmenu = 202;
+	var numguests = 3;
+	var menu = [];
+	var clickDishId = 1;
+
+	//sets the last clicked ID
+	this.setClickDishId = function(id){
+		clickDishId = id;
+		notifyObservers();
+	}	
+
+	this.getClickDishId = function(){
+		return clickDishId;
+	}
+
 
 	// sets the number of guests
 	this.setNumberOfGuests = function(num) {
@@ -16,27 +26,29 @@ var DinnerModel = function() {
 
 	// returns the number of guests
 	this.getNumberOfGuests = function() {
-		return numguests;
+		return parseInt(numguests);
 	}
 
 	//Returns the dish that is on the menu for selected type 
 	this.getSelectedDish = function(type) {
-		var typelist = [];
 
-		for(key in dishes){
-			if(dishes[key].type == type){
-				typelist.push(dishes[key].name);
-			}
-		}
-		return typelist;
+		return menu[type];
+		//var typelist = [];
+
+		//for(key in dishes){
+			//if(dishes[key].type == type){
+				//typelist.push(dishes[key].name);
+			//}
+		//}
+		//return typelist;
 	}
 
 	//Returns all the dishes on the menu 
 	this.getFullMenu = function() {
 		var fullmenulist = [];
 
-		for(key in dishes){
-			fullmenulist.push(dishes[key].name);
+		for(key in menu){
+			fullmenulist.push(this.getDish(menu[key]);
 		}
 		return fullmenulist;
 		notifyObservers();
@@ -46,63 +58,68 @@ var DinnerModel = function() {
 	this.getAllIngredients = function() {
 		var ingredientslist= [];
 
-		for(key in dishes){
-			ingredientslist.push(dishes[key].ingredients);
+		for(key in menu){
+			var dish = this.getDish(menu[key]);
+			ingredientslist = ingredientslist.concat(dish.ingredients); //concat joins two arrays
 		}
 
 		return ingredientslist;
 		notifyObservers();
 	}
 
+//prints ingredients for a certain dish
+	this.getPrintIngredients = function(dish){
+
+		var printText = '';
+		for(var i = 0; i <dish.ingredients.length; i++)
+		{
+		 	var x = dish.ingredients[i];
+		 	printText = printText + x.name + ' ' + (x.quantity*this.getNumberOfGuests()) + ' ' + x.unit + '</BR>'; 
+		}
+		return printText;
+		notifyObservers();
+	}
+
+//returns the cost of a dish
+	this.getDishCost = function (dish) {
+		var ingredientslist = dish.ingredients;
+		var sum = 0;
+
+		for(key in ingredientslist){
+
+			sum +=parseFloat(ingredientslist[key].price)*this.getNumberOfGuests();
+		}
+		return sum;
+
+	}
+
 	//Returns the total price of the menu (all the ingredients multiplied by number of guests).
 	this.getTotalMenuPrice = function() {
 
-		var ingredientsprice = 0;
-		var i = 0;
+		var ingredientslist = this.getAllIngredients();
+		var sum = 0;
 
-		for(key in dishes){
-			if(dishes[key].id == menu[i]) {
-				for(key1 in ingredients){
-					ingredientsprice = ingredientsprice + dishes[key].ingredients[key1].price;
-				}
-			}
-			i++;
+		for(key in ingredientslist){
+			sum +=parseFloat(ingredientslist[key].price)*this.getNumberOfGuests();
 		}
 
-		return ingredientsprice;
-		notifyObservers();
+		return sum;
 	}
 
 	//Adds the passed dish to the menu. If the dish of that type already exists on the menu
 	//it is removed from the menu and the new one added.
 	this.addDishToMenu = function(id) {
-		idmenu = id;
-
-		for(var i = 0; i<menu.length; i++){
-			if(menu[i]==idmenu){
-				menu.splice(menu[i], 1); //removes one element from the key position
-				menu.push(idmenu); //readds the id selected
-			}
-			else{
-
-				menu.push(idmenu); //adds the id to the menu as it does not exist already
-			}
-		}
-		notifyObservers();
+		menu[this.getDish(id).type]=id;
+		notifyObservers
 
 	}
 
 	//Removes dish from menu
 	this.removeDishFromMenu = function(id) {
-		idmenu = id;
+	var type = this.getDish(id).type;
 
-		for(var i = 0; i<menu.length; i++){
-			if(menu[i]==idmenu){
-				menu.splice(menu[i], 1);
-			}
-			else{
-				window.alert("that dish is not in the menu!!!twat!"); 
-			}
+		if(menu[type] == id) {
+			delete menu[type];
 		}
 		notifyObservers();
 	}
