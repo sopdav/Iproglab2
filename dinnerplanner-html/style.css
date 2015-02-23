@@ -50,17 +50,6 @@ html, body {
     float: center;
 }
 
-/*#selectDishView #mainbar {
-	background-color: #EFDC97;
-	border-style: solid;
-	border-width: 2px;
-	border-color: black;
-	color: black;
-	padding-left: 200px;
-	padding-bottom: 10px;
-
-    float: center;
-}*/
 
 #selectDishView {
 	background-color: white;
@@ -73,118 +62,49 @@ html, body {
     float: center;
 }
 
-.tablecell{
-	text-align: right; 
-	padding-left: 10px;
-	padding-right: 10px;
-
+#finalView{
+	padding-top: 20px;
+	padding-bottom: 40px;
 }
 
-.namecell{
-	text-align: center; 
-	padding-left: 10px;
-	padding-right: 10px;
-
+#numberOfGuestsView{
+	background-color: #FC6;
 }
 
-.lasagnecell{
-	text-align: left; 
-	padding-left: 0px;
-	padding-right: 10px;
-	padding-top: -10px;
-
-}
-
-/*TREDJE SIDAN*/
-
-/*#lasagne #sidebar2 {
-	background-color: white;
-	border-style: solid;
-	border-width: 2px;
-	border-color: black;
-	color: black;
-	text-align: left;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-bottom: 320px;
-
-	
-	display:none;
-    float: left;
-}*/
-
-#lasagneView {
-	display:none;
-    float: left;
+#sidebarView {
+	border-right: inset;
+	height: 50%;
 }
 
 #lasagneView {
-	position: absolute;
-	left: -10%;
-	right: 0%;
-
-
-	display:none;
-    float: right;
+	width: 350px;
+	font-weight: normal;
 }
 
-.ingredientstable {
-	background-color: #EFDC97;
-	padding: 100px;
-	border-style: solid;
-	border-color: black;
-
+#images{
+    text-align:center;
+    margin:50px auto;
 }
 
-/*FJÄRDE SIDAN*/
+#mainbar{
+	display:block;
+}
 
-/*#sidebar3 {
-	background-color: white;
-	border-style: solid;
-	border-width: 2px;
-	border-color: black;
+#images a{
+    margin:0px 20px;
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+}
+
+a{
 	color: black;
-	text-align: left;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-bottom: 320px;
-
-	
-	display:none;
-    float: left;
-}*/
-
-
-
- #lowerbar2 {
-	background-color: white;
-	border-style: solid;
-	border-width: 2px;
-	border-color: black;
-	color: black;
-	padding-left:325px;
-
-	display:none;
+	opacity: 1.5;
+}
+a:link{
+	text-decoration: none;
 }
 
-
-/*FEMTE SIDAN samt SJÄTTE SIDAN*/
-
-#exampleView #dinneroverview{
-	background-color: #EFDC97;
-	color: black;
-	font-size: 20px;
-	text-align: left;
-	padding-bottom: 20px;
-
-	display:none;
-	float: center;
-
-}
-
-#lowerbar3 {
-	display:none;
-}
 
 .confirmbutton {
 	position: absolute;
@@ -206,16 +126,7 @@ html, body {
 	display:none;
 }
 
-.leftcell{
 
-	border-style: solid;
-	border-right: none;
-	border-bottom: none;
-	border-top: none;
-	border-left-color: black;
-	padding-left: 10px;
-	border-width: 2px;
-}
 
 .editbutton {
 	font-size: 15px;
@@ -231,31 +142,7 @@ html, body {
 	border-color: black;
 }
 
-/*SJÄTTE SIDAN*/
 
-#lowerbar4 {
-	display:none;
-}
 
-.pictable {
-	text-align: center;
-	padding: 10px;
-}
-
-.headertable {
-	font-weight: bold;
-	font-size: 30px;
-	padding: 10px;
-}
-
-.texttable {
-	font-size: 10px;
-	padding: 10px;
-}
-
-.header2table {
-	font-size: 20px;
-	padding: 10px;
-}
 
 

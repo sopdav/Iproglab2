@@ -267,3 +267,117 @@ lasange
 				</table>
 		</div>
 	</div>
+
+
+	<!--HÄR BÖRJAR SJÄTTE SIDAN-->
+
+
+<div id="dinnerPreparation" style="display:none;">
+	<div id="lowerbar4">
+		<br>
+		<table id="recipe">
+			<tr>
+				<td class="pictable" width="100px" rowspan="2"><img src="images/icecream.jpg" alt="Ice cream" style="border:3px solid black"></td>
+				<td class="headertable" width="250px"><p>LASAGNE</p></td>
+				<td class="header2table" width="400px"><p>PREPARATION</p></td>
+					<tr>
+						<td class="texttable"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></td>
+						<td class="texttable"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></td>
+					</tr>
+				
+			</tr>
+			<tr>
+				<td class="pictable" width="100px" rowspan="2"><img src="images/meatballs.jpg" alt="Meatballs" style="border:3px solid black"></td>
+				<td class="headertable" width="250px"><p>FIORENTINA</p></td>
+				<td class="header2table" width="400px"><p>PREPARATION</p></td>
+					<tr>
+						<td class="texttable"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></td>
+						<td class="texttable"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></td>
+					</tr>
+			</tr>
+		</table>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+.tablecell{
+	text-align: right; 
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+.namecell{
+	text-align: center; 
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+.lasagnecell{
+	text-align: left; 
+	padding-left: 0px;
+	padding-right: 10px;
+	padding-top: -10px;
+
+}
+
+.ingredientstable {
+	background-color: #EFDC97;
+	padding: 100px;
+	border-style: solid;
+	border-color: black;
+
+}
+
+.leftcell{
+
+	border-style: solid;
+	border-right: none;
+	border-bottom: none;
+	border-top: none;
+	border-left-color: black;
+	padding-left: 10px;
+	border-width: 2px;
+}
+
+.pictable {
+	text-align: center;
+	padding: 10px;
+}
+
+.headertable {
+	font-weight: bold;
+	font-size: 30px;
+	padding: 10px;
+}
+
+.texttable {
+	font-size: 10px;
+	padding: 10px;
+}
+
+.header2table {
+	font-size: 20px;
+	padding: 10px;
+}
+
+#lasagneView {
+	position: absolute;
+	left: -10%;
+	right: 0%;
+
+
+	display:none;
+    float: right;
+}
