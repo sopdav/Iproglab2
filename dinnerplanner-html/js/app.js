@@ -11,6 +11,10 @@ $(function() {
 
 	// Controllers for Select Dish View
 	var selectDishView = new SelectDishView($("#selectDishView"), model);
-	var selectDishControllerView = new selectDishControllerView(selectDishView, model);
+	var selectDishControllerView = new SelectDishControllerView(selectDishView, model);
+
+	// Controllers for Sidebar View
+	var sidebarView = new sidebarView($("#sidebarView"), model);
+	var sidebarControllerView = new sidebarControllerView(sidebarView, model);
 
 });

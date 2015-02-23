@@ -8,12 +8,14 @@ var DinnerModel = function() {
 
 	// sets the number of guests
 	this.setNumberOfGuests = function(num) {
-		numguests = num;
-		}
+		if (num>0) {
+			numguests = num;
+			notifyObservers(); // to update
+		};
+	}
 
 	// returns the number of guests
 	this.getNumberOfGuests = function() {
-		console.log(numguests);
 		return numguests;
 	}
 
@@ -37,6 +39,7 @@ var DinnerModel = function() {
 			fullmenulist.push(dishes[key].name);
 		}
 		return fullmenulist;
+		notifyObservers();
 	}
 
 	//Returns all ingredients for all the dishes on the menu.
@@ -48,6 +51,7 @@ var DinnerModel = function() {
 		}
 
 		return ingredientslist;
+		notifyObservers();
 	}
 
 	//Returns the total price of the menu (all the ingredients multiplied by number of guests).
@@ -66,6 +70,7 @@ var DinnerModel = function() {
 		}
 
 		return ingredientsprice;
+		notifyObservers();
 	}
 
 	//Adds the passed dish to the menu. If the dish of that type already exists on the menu
@@ -82,7 +87,8 @@ var DinnerModel = function() {
 
 				menu.push(idmenu); //adds the id to the menu as it does not exist already
 			}
-		}	
+		}
+		notifyObservers();
 
 	}
 
@@ -97,8 +103,8 @@ var DinnerModel = function() {
 			else{
 				window.alert("that dish is not in the menu!!!twat!"); 
 			}
-
-
+		}
+		notifyObservers();
 	}
 
 	//function that returns all dishes of specific type (i.e. "starter", "main dish" or "dessert")
@@ -120,7 +126,8 @@ var DinnerModel = function() {
 			}
 		}
 	  	return dish.type == type && found;
-	  });	
+	  });
+	  notifyObservers();
 	}
 
 	//function that returns a dish of specific ID
@@ -383,6 +390,27 @@ var DinnerModel = function() {
 			}]
 		}
 	];
-}
+
+	/*****
+		The observer part
+
+
+	*****/
+
+	// an empty list
+	var observers = [];
+
+	this.addObserver = function(observer) {
+		observers.push(observer);			// adds a new observer to the list (array)
+	}
+
+	// calls the update functions on the observers in the list (array)
+	var notifyObservers = function(object) {
+		for (var i = 0; i < observers.length; i++) {
+			observers[i].update(object);
+		};
+	}
 
 }
+
+
