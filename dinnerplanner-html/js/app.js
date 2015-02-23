@@ -25,4 +25,8 @@ $(function() {
 	var lasagneView = new LasagneView($("#lasagneView"), model);
 	var lasagneControllerView = new LasagneControllerView(lasagneView, model);
 
+	//View for the final page
+	var finalView = new FinalView($("#finalView"), model);
+	
+
 });
