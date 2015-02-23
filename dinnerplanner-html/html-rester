@@ -155,3 +155,115 @@ lasange
             </div>
         </div>
     </div>
+
+
+
+
+
+    <!--HÄR BÖRJAR FJÄRDE SIDAN!!!!!!!!!-->
+
+<div id="screenAfter" style="display:none;">
+
+
+	<div id="lowerbar2">
+			<table id="foodtable">
+				<tr>
+					<td class="tablecell"><img src="images/bakedbrie.jpg" height="145px" width="145px" style="border:3px solid black"></td>
+					<td class="tablecell"><img src="images/icecream.jpg" alt="Ice cream" style="border:3px solid black"></td>
+					<td class="tablecell"><img src="images/meatballs.jpg" alt="Meatballs" style="border:3px solid black"></td>
+					<td class="tablecell"><img src="images/sourdough.jpg" alt="Sourdough" style="border:3px solid black"></td>
+					<td class="tablecell"><img src="images/toast.jpg" alt="Toast" style="border:3px solid black"></td>
+				</tr><br>
+				<tr>
+					<td class="namecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3"> Baked Brie</p></td>
+					<td class="namecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Ice cream</p> </td>
+					<td class="namecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Meat balls</p></td>
+					<td class="namecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Sour dough</p></td>
+					<td class="namecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Toast</p></td>
+				</tr><br>
+
+				<tr>
+					<td class="tablecell">text,text,text.text,text<br>text,text,text,text,text.<br>text,text,text.text,text.<br>text,text,text.text,text.</td><br>
+					<td class="tablecell">text,text,text.text,text<br>text,text,text,text,text.<br>text,text,text.text,text.<br>text,text,text.text,text.</td><br>
+					<td class="tablecell">text,text,text.text,text<br>text,text,text,text,text.<br>text,text,text.text,text.<br>text,text,text.text,text.</td><br>
+					<td class="tablecell">text,text,text.text,text<br>text,text,text,text,text.<br>text,text,text.text,text.<br>text,text,text.text,text.</td><br>
+					<td class="tablecell">text,text,text.text,text<br>text,text,text,text,text.<br>text,text,text.text,text.<br>text,text,text.text,text.</td><br>
+
+				</tr>
+			</table>
+	</div>
+</div>
+
+
+<!--HÄR BÖRJAR FEMTE SIDAN-->
+<div id="exampleView" style="display:none;">
+	
+
+
+		<div id="lowerbar3">
+			<div class="line1"></div>
+			<br>
+						<table id="foodtable" align="center" style="width:700px">
+							<tr>
+								<td class="tablecell"><img src="images/bakedbrie.jpg" height="170px" width="170px" style="border:3px solid black"></td>
+								<td class="tablecell"><img src="images/icecream.jpg" width="170px" alt="Ice cream" style="border:3px solid black"></td>
+								<td class="tablecell"><img src="images/meatballs.jpg" width="170px" alt="Meatballs" style="border:3px solid black"></td>
+								<td class="leftcell"></td>
+							</tr>
+							<tr>
+								<td class="namecell" width="170px"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Baked Brie</p></td>
+								<td class="namecell" width="170px"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Ice Cream</p></td>
+								<td class="namecell" width="170px"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Meat Balls</p></td>
+								<td class="leftcell">Total:</td>
+							</tr>
+							<tr>
+								<td class="tablecell">77.20 SEK</td>
+								<td class="tablecell">180.60 SEK</td>
+								<td class="tablecell">83.40 SEK</td>
+								<td class="leftcell">341.20 SEK</td>
+							</tr>
+						</table>
+						<hr class="line1">		
+		</div>
+		
+		<div>
+			<button class="confirmbutton2" style="background-color:#FFC966" type="button" >Print Full Recipe</button>
+		</div>
+</div>	
+
+
+
+	 <!--HÄR BÖRJAR selectdishView!!!!!!!!!-->
+
+
+  	<div class="container-fluid" id="dishDescriptionView" style="display:none;">
+
+		<div id="lowerbar">
+
+			<table id="foodtable">
+				<tr>
+					<td class="tablecell"><img src="images/bakedbrie.jpg" height="145px" width="140px" style="border:3px solid black"></td>
+					<td class="tablecell"><img src="images/icecream.jpg" alt="Ice cream" style="border:3px solid black"></td>
+					<td class="tablecell"><img src="images/meatballs.jpg" alt="Meatballs" style="border:3px solid black"></td>
+					<td class="tablecell"><img src="images/sourdough.jpg" alt="Sourdough" style="border:3px solid black"></td>
+					<td class="tablecell"><img src="images/toast.jpg" alt="Toast" style="border:3px solid black"></td>
+				</tr>
+				<tr>
+					<td class="tablecell"> <p style="border-style:solid; border-color:black; background-color:#D3D3D3"> Baked Brie</p></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Ice cream</p> </td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Meat balls</p></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Sour dough</p></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<td class="tablecell"><p style="border-style:solid; border-color:black; background-color:#D3D3D3">Toast</p></td>
+				</tr><br>
+
+				<tr>
+					<td class="tablecell">text,text,text.text,text<br>text,text,text,text,text.<br>text,text,text.text,text.<br>text,text,text.text,text.</td><br>
+					<td class="tablecell">text,text,text.text,text<br>text,text,text,text,text.<br>text,text,text.text,text.<br>text,text,text.text,text.</td><br>
+					<td class="tablecell">text,text,text.text,text<br>text,text,text,text,text.<br>text,text,text.text,text.<br>text,text,text.text,text.</td><br>
+					<td class="tablecell">text,text,text.text,text<br>text,text,text,text,text.<br>text,text,text.text,text.<br>text,text,text.text,text.</td><br>
+					<td class="tablecell">text,text,text.text,text<br>text,text,text,text,text.<br>text,text,text.text,text.<br>text,text,text.text,text.</td><br>
+
+				</tr>
+				</table>
+		</div>
+	</div>
