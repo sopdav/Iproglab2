@@ -62,7 +62,7 @@ html, body {
     float: center;
 }*/
 
-#selectDishView #lowerbar {
+#selectDishView {
 	background-color: white;
 	border-style: solid;
 	border-width: 2px;
@@ -113,12 +113,12 @@ html, body {
     float: left;
 }*/
 
-#lasagne #middlebar {
+#lasagneView {
 	display:none;
     float: left;
 }
 
-#lasagne #rightbar {
+#lasagneView {
 	position: absolute;
 	left: -10%;
 	right: 0%;
