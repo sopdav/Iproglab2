@@ -33,7 +33,7 @@ html, body {
 
 /*ANDRA SIDAN*/
 
-#selectDishView #sidebar {
+#sidebar {
 	background-color: white;
 	border-style: solid;
 	border-width: 2px;

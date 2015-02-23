@@ -9,7 +9,7 @@ var ExampleView = function (container,model) {
 	this.plusButton = container.find("#plusGuest");
 	this.minusButton = container.find("#minusGuest");
 	
-	this.numberOfGuests =container.find("#numberOfGuests2");
+	this.numberOfGuests = container.find("#numberOfGuests2");
 	this.numberOfGuests.html(model.getNumberOfGuests());
 	
 }

@@ -1,5 +1,6 @@
 $( "#createNewDinner" ).click(function() {
 	$('#firstpageView').hide();
-	$('#mainbar').show();
+	$('#mainbarView').show();
+	$('#sidebarView').show();
 	$('#selectDishView').show();
 });
