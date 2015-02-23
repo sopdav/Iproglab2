@@ -21,4 +21,8 @@ $(function() {
 	var numberOfGuestsView = new NumberOfGuestsView($("#numberOfGuestsView"), model);
 	var numberOfGuestsControllerView = new NumberOfGuestsControllerView(numberOfGuestsView, model);
 
+	//Controller and View
+	var lasagneView = new LasagneView($("#lasagneView"), model);
+	var lasagneControllerView = new LasagneControllerView(lasagneView, model);
+
 });
