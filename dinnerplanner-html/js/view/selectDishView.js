@@ -3,13 +3,11 @@ var SelectDishView = function (container, model){
 	this.starter = container.find("#starters");
 	this.main = container.find("#mains");
 	this.dessert = container.find("#desserts");
-	
-	console.log('SelectDishView!');
+
 	var listOfSessions = "";
 
 	// gets all the starter dishes with their picture and namne, li creates a list (bulleted?)
 	for (var j = 0; j < model.getAllDishes("starter").length; j++) {
-		console.log('in the for');
 			listOfSessions += '<li id=list style="display:inline-block;width:200px;height:200px;">' + '<div id=' + model.getAllDishes("starter")[j].id + '>' + '<img style="width:150px;height:150px;" src="' + 'images/' + model.getAllDishes("starter")[j].image + '" alt ="' + model.getAllDishes("starter")[j].image + 
 			'">' + '<br>' + model.getAllDishes("starter")[j].name + '</div>';
 			listOfSessions += '</li>';
@@ -18,9 +16,9 @@ var SelectDishView = function (container, model){
 		listOfSessions = "";
 
 	// gets all the main course dishes with their picture and name
-	for (var j = 0; j < model.getAllDishes("main").length; j++) {
-			listOfSessions += '<li id=list style="display:inline-block;width:200px;height:200px;">' + '<div id=' + model.getAllDishes("main")[j].id + '>' + '<img style="width:150px;height:150px;" src="' + 'images/' + model.getAllDishes("main")[j].image + '" alt ="' + model.getAllDishes("main")[j].image + 
-			'">' + '<br>' + model.getAllDishes("main")[j].name + '</div>';
+	for (var j = 0; j < model.getAllDishes("main dish").length; j++) {
+			listOfSessions += '<li id=list style="display:inline-block;width:200px;height:200px;">' + '<div id=' + model.getAllDishes("main dish")[j].id + '>' + '<img style="width:150px;height:150px;" src="' + 'images/' + model.getAllDishes("main dish")[j].image + '" alt ="' + model.getAllDishes("main dish")[j].image + 
+			'">' + '<br>' + model.getAllDishes("main dish")[j].name + '</div>';
 			listOfSessions += '<br><br></li>';	// adds to the current list
 		}
 		document.getElementById("mains").innerHTML = listOfSessions;
@@ -37,19 +35,19 @@ var SelectDishView = function (container, model){
 
 	// Create the function to search in the main bar
 
-	var searchList = [];
+//	var searchList = [];
 
 	// gets the variables from searchList if they are in searchDish
-	$('#searchDish').typeahead( {
-		local: searchList
-	});
+//	$('#searchDish').typeahead( {
+//		local: searchList
+//	});
 
 	// keyup handles what is pressed on the keyboard
-	$('#searchDish').keyup(function() {
-		var userInput = $(this).val();
-		$('#selectDishView', li).map(function(index, value) {
-			$(value).toggle($(value).text().toLowerCase().indexOf(userInput) >= 0); // shows the chosen dish
-		});
-	});
+//	$('#searchDish').keyup(function() {
+//		var userInput = $(this).val();
+//		$('#selectDishView', li).map(function(index, value) {
+//			$(value).toggle($(value).text().toLowerCase().indexOf(userInput) >= 0); // shows the chosen dish
+//		});
+//	});
 }
 

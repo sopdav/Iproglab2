@@ -4,10 +4,10 @@ $(function() {
 	window.stage = "dessert";
 
 	//We instantiate our model
+	console.log("app.js");
 	var model = new DinnerModel();
 	
 	//And create the needed controllers and views
-	var exampleView = new ExampleView($("#exampleView"), model);
 
 	// Controllers for Select Dish View
 	var selectDishView = new SelectDishView($("#selectDishView"), model);
@@ -27,6 +27,8 @@ $(function() {
 
 	//View for the final page
 	var finalView = new FinalView($("#finalView"), model);
+
 	
+	var exampleView = new ExampleView($("#exampleView"), model);
 
 });

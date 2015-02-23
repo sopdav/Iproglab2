@@ -1,8 +1,9 @@
 var SelectDishControllerView = function(view, model) {
 	$(document).on("change", "#option", function() {
 		var chosen = this.value;
-		
+
 		// shows only starters
+		console.log(chosen);
 		if (chosen == "Starters") { // looks over in the html-code to find the value
 			$('#starters').show();
 			$('#mains').hide();
