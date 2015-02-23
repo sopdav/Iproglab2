@@ -90,14 +90,13 @@
 				<tbody>
 					<td>
 						<form role="form">
-
-							<input type="keyword" class="form-control" id="serachDish" placeholder="Please enter keywords">
+							<input type="keyword" class="form-control" id="searchDish" placeholder="Please enter keywords">
 						</form>
 					</td>
 					
 					<td>
 						<select class="form-control" id="option">
-							<option id="allOptions"></option>
+							<option id="allOptions">All</option>
 							<option id="starterOption">Starters</option>
 							<option id="mainOption">Main courses</option>
 							<option id="dessertOption">Desserts</option>
@@ -140,7 +139,7 @@
 
     <div class="col-md-9" id="lasagneView" style="display:none;">
         <div class="col-md-3">
-        	<button id="backToSelectDish" class="btn btn-warning" role:"button">Back to select dish</button>
+        	<button id="backToSelectDish" class="btn btn-warning" role="button">Back to select dish</button>
         		
                 <h2 id="dishName"></h2>
                 <img id="dishImg">
@@ -300,14 +299,25 @@
 	<!--Views-->
 	<script src="js/view/firstpageView.js"></script>
 
-	<script src="js/view/exampleView.js"></script>
-	<script src="js/view/exampleViewController.js"></script>
+	<!--script src="js/view/exampleView.js"></script>
+	<script src="js/view/exampleViewController.js"></script-->
 
 	<script src="js/view/selectDishView.js"></script>
 	<script src="js/view/selectDishControllerView.js"></script>
 
 	<script src="js/view/sidebarView.js"></script>
 	<script src="js/view/sidebarControllerView.js"></script>
+
+	<script src="js/view/lasangeView.js"></script>
+	<script src="js/view/lasagneControllerView.js"></script>
+
+	<script src="js/view/totalCostView.js"></script>
+	<script src="js/view/totalCostControllerView.js"></script>
+
+	<script src="js/view/numberOfGuestsView.js"></script>
+	<script src="js/view/numberOfGuestsControllerView.js"></script>
+
+	<script src="js/view/finalView.js"></script>
 
 
 

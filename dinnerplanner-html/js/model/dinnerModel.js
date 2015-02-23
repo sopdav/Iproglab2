@@ -48,7 +48,7 @@ var DinnerModel = function() {
 		var fullmenulist = [];
 
 		for(key in menu){
-			fullmenulist.push(this.getDish(menu[key]);
+			fullmenulist.push(this.getDish(menu[key]));
 		}
 		return fullmenulist;
 		notifyObservers();
@@ -144,6 +144,7 @@ var DinnerModel = function() {
 		}
 	  	return dish.type == type && found;
 	  });
+
 	  notifyObservers();
 	}
 

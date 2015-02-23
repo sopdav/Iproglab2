@@ -4,7 +4,6 @@ html, body {
 
 .title {
 	background-color: #EFDC97;
-
  	display: block;
 	font-size: 40px;
 	border-style: solid;
@@ -33,13 +32,13 @@ html, body {
 
 /*ANDRA SIDAN*/
 
-#sidebarView {
+/*#sidebarView {
 	border-right: inset;
 	height: 50%
 
-}
+}*/
 
-#mainbarView {
+/*#mainbarView {
 	background-color: #EFDC97;
 	border-style: solid;
 	border-width: 2px;
@@ -48,10 +47,10 @@ html, body {
 	padding-left: 200px;
 	display:none;
     float: center;
-}
+}*/
 
 
-#selectDishView {
+/*#selectDishView {
 	background-color: white;
 	border-style: solid;
 	border-width: 2px;
@@ -60,7 +59,7 @@ html, body {
 	padding-left: 325px;
 
     float: center;
-}
+}*/
 
 #finalView{
 	padding-top: 20px;
@@ -106,7 +105,7 @@ a:link{
 }
 
 
-.confirmbutton {
+/*.confirmbutton {
 	position: absolute;
 	left: 2.9%;
 }
@@ -135,13 +134,29 @@ a:link{
 	right: 0%;
 	top: 10%;
 
-}
+}*/
+
 .line1{
 	border-style: solid;
 	border-width: 3px;
 	border-color: black;
 }
 
+.side-container {
+	padding: 9px 0;
+    left:20px;
+    top:60px;
+    width:20%;
+}
+
+.sublead {
+	font-size: 20px;
+	font-style: italic;
+}
+.summaryfigure img { 
+	display: inline-block; 
+	vertical-align: middle; 
+}
 
 
 

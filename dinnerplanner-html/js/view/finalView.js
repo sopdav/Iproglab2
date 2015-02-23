@@ -37,7 +37,7 @@ var finalView = function (view, model){
 					this.mainPrep.html(dish.description);
 					this.mainIngredients.html(model.getPrintIngredients(dish));
 				
-
+				}
 				if(dish.type == 'dessert'){
 
 					this.dessertImg.attr('src', 'images/' +dish.image);
