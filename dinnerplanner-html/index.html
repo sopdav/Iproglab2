@@ -11,21 +11,6 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
 
     <link rel='stylesheet' href='./style.css' type="text/css">
-
-    <!-- jQuery -->
-
-     <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-
-	<!-- The application JavaScript code -->
-	<script src="js/app.js"></script>
-	<script src="js/model/firstpageView.js"></script>
-	<script src="js/model/dinnerModel.js"></script>
-	<script src="js/view/exampleView.js"></script>
-	<script src="js/view/exampleViewController.js"></script>
-
-
   </head>
 
   <body>
@@ -33,9 +18,9 @@
 
 
 
-	<div class="container-fluid">
-		<div id="firstpageView">			
-			<div>
+	<div id="firstpageView">
+		<div class="container-fluid">			
+			
 				<table border="0" style="width:30%; background: rgba(255,255,255,.5)">
 					<tr>
 						<td>
@@ -50,14 +35,17 @@
 
 					<tr>
 
-						<td> <br> Start Quickly <br> <button id="createNewDinner" type="button" style="background-color:#EFDC97">Create new dinner</button></td>		
-					</tr>
+						<td> <br> Start Quickly <br> </td>		
+					</tr> 
 				</table>
-			</div>
+				<button id="createNewDinner" type="button" style="background-color:#EFDC97">Create new dinner</button>
 		</div>	
 	</div>
 
-  	<div class="container-fluid" id="selectDishView">
+	 <!--HÄR BÖRJAR selectdishView!!!!!!!!!-->
+
+
+  	<div class="container-fluid" id="selectDishView" style="display:none;">
 
 		<div id="sidebar">
 			My Dinner<br>
@@ -128,7 +116,7 @@
 
     <!--HÄR BÖRJAR LASAGNE!!!!!!!!!-->
 
-    <div class="container-fluid" id="lasagne">
+    <div class="container-fluid" id="lasagne" style="display:none;">
         <div class="col-md-2">
 
             <div id="sidebar2">
@@ -270,7 +258,7 @@
 
 <!--HÄR BÖRJAR FJÄRDE SIDAN!!!!!!!!!-->
 
-<div id="Screen-after">
+<div id="screenAfter" style="display:none;">
 		<div id="sidebar3"
 				My Dinner<br>
 				People
@@ -341,13 +329,13 @@
 
 
 <!--HÄR BÖRJAR FEMTE SIDAN-->
-<div id="exampleView">
+<div id="exampleView" style="display:none;">
 	<div class="container-fluid" id="dinneroverview">		
 		<div  id="mainbar3">My Dinner: <span  id="numberOfGuests"></span>&nbsp;People
 			<button class="editbutton" style="background-color:#EFDC97" type="button">Go back and edit dinner</button>
 		</div>
 	</div>	
-</div>
+
 
 		<div id="lowerbar3">
 			<div class="line1"></div>
@@ -378,7 +366,7 @@
 		<div>
 			<button class="confirmbutton2" style="background-color:#FFC966" type="button" >Print Full Recipe</button>
 		</div>
-		
+</div>		
 	
 
 
@@ -392,7 +380,7 @@
 	</div>
 </div-->
 
-<div id="dinner-preparation"
+<div id="dinnerPreparation" style="display:none;">
 	<div id="lowerbar4">
 		<br>
 		<table id="recipe">
@@ -419,9 +407,21 @@
 	</div>
 </div>
 	
+	 <!-- jQuery -->
+
+     <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+	<!-- The application JavaScript code -->
+	<script src="js/app.js"></script>
+	
+	<script src="js/model/dinnerModel.js"></script>
+	<script src="js/view/firstpageView.js"></script>
+	<script src="js/view/exampleView.js"></script>
+	<script src="js/view/selectDishView.js"></script>
+	<script src="js/view/exampleViewController.js"></script>
+
 	
 </body>
-
-
-
 </html>

@@ -1,5 +1,5 @@
-$("#createnewdinner").click(function){
-	$('#firstpageview').hide();
+$( "#createNewDinner" ).click(function() {
+	$('#firstpageView').hide();
 	$('#mainbar').show();
-	$('selectDishView').show();
-}
+	$('#selectDishView').show();
+});
