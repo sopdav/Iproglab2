@@ -53,6 +53,12 @@ var SelectDishView = function (container, model){
 		local: searchList;
 	});
 
-	
+	// keyup handles what is pressed on the keyboard
+	$('#searchDish').keyup(function( {
+		var inputOfUser = $(this).val();
+		$('#SelectDishView', li).map(function(index, value) {
+			$(value).toggle($(value).text().toLowerCase().indexOf(inputOfUser) >= 0); // shows the chosen dish
+		});
+	}));
 }
 
