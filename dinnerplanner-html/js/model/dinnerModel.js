@@ -392,8 +392,8 @@ var DinnerModel = function() {
 	];
 
 	/*****
+	
 		The observer part
-
 
 	*****/
 

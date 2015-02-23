@@ -28,6 +28,22 @@ var SidebarView = function(container, model) {
 
 	model.addObserver(this);
 
-	this.update
+	this.update = function(object) {
+		// guests and cost
+		this.numberOfGuests.html(model.getNumberOfGuests());
+		this.totalCost.html(model.getTotalMenuPrice());
+
+		// the courses
+		this.starter = model.getSelectedDish('starter');
+		this.main = model.getSelectedDish('main dish');
+		this.dessert = model.getSelectedDish('dessert');
+
+		// now we'd like to update the courses
+		this.starterItem.html(model.getSelectedDish('starter'));
+		this.mainItem.html(model.getSelectedDish('main dish'));
+		this.dessertItem.html(model.getSelectedDish('dessert'));
+	}
+
+	this.update();
 
 }
