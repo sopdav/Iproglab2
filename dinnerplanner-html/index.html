@@ -136,19 +136,19 @@
 
 
     <!--lasagneView(dish description)-->
-
-    <div class="col-md-9" id="lasagneView" style="display:none;">
-        <div class="col-md-3">
-        	<button id="backToSelectDish" style="background-color:#EFDC97"  type="button">Back to select dish</button>
-        		
-                <h2 id="dishName"></h2>
-                <img id="dishImg">
-
-                <h2>PREPARATION</h2>
-                	<p id="dishPrep" style="width:500px"></p>
+    <div class="row">
+    	<div class="col-md-12" id="lasagneView" style="display:none;">
+    	<div class="row">
+        <div class="col-md-6">	
+             <h2 id="dishName"></h2>
+             <img id="dishImg">
+             <br>
+             <button id="backToSelectDish" style="background-color:#EFDC97" type="button">Back to select dish</button>
+             <h2>PREPARATION</h2>
+             <p id="dishPrep" style="width:500px"></p>
         </div>
 
-        <div class="col-md-offset-7">
+        <div class="col-md-6 col-md-offset-0">
         	<h2>Ingredients for <span id="numberOfGuests"></span> people</h2>
         	<div id="ingredientslist">
         	</div>
@@ -160,6 +160,8 @@
         		<span id="priceCounter"></span>
         	</div>
         </div>
+        </div>
+   		</div>
     </div>    
 
 
