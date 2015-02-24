@@ -35,19 +35,20 @@ var SelectDishView = function (container, model){
 
 	// Create the function to search in the main bar
 
-//	var searchList = [];
+/**	var searchList = [];
 
-	// gets the variables from searchList if they are in searchDish
-//	$('#searchDish').typeahead( {
-//		local: searchList
-//	});
+	gets the variables from searchList if they are in searchDish
+	$('#searchDish').typeahead( {
+		local: searchList
+	});
 
 	// keyup handles what is pressed on the keyboard
-//	$('#searchDish').keyup(function() {
-//		var userInput = $(this).val();
-//		$('#selectDishView', li).map(function(index, value) {
-//			$(value).toggle($(value).text().toLowerCase().indexOf(userInput) >= 0); // shows the chosen dish
-//		});
-//	});
+	$('#searchDish').keyup(function() {
+		var userInput = $(this).val();
+		$('#selectDishView', li).map(function(index, value) {
+			$(value).toggle($(value).text().toLowerCase().indexOf(userInput) >= 0); // shows the chosen dish
+		});
+	});
+**/
 }
 

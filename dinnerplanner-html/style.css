@@ -66,6 +66,11 @@ html, body {
 	padding-bottom: 40px;
 }
 
+#totalCostView {
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
 #numberOfGuestsView{
 	background-color: #FC6;
 }

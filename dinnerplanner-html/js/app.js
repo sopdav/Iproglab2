@@ -28,6 +28,9 @@ $(function() {
 	//View for the final page
 	var finalView = new FinalView($("#finalView"), model);
 
+	var totalCostView = new TotalCostView($("#totalCostView"), model);
+	var totalCostControllerView = new TotalCostControllerView(totalCostView, model);
+
 
 	//var exampleView = new ExampleView($("#exampleView"), model);
 
