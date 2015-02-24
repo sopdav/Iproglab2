@@ -5,4 +5,6 @@ var TotalCostControllerView = function(view, model) {
 		$('#lasagneView').hide();
 		$('#finalView').show();
 	});
+
+
 }
