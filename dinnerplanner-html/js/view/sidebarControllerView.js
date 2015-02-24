@@ -7,14 +7,15 @@ var SidebarControllerView = function(view, model) {
 
 	// Handles the confirm button
 	// Shows numberOfGuestsView + totalCostView
-	$('#confirmButton').click(function() {
+	view.confirmButton.click(function() {
+		$('#sidebarView').show();
 		$('#mainbar').hide();
-		$('#sidebarView').hide();
 		$('#lasagneView').hide();
 		$('#selectDishView').hide();
 		$('#numberOfGuestsView').show();
 		$('#totalCostView').show();
 	});
+
 
 	// Handles the remove starter button in the sidebar
 	// Shows the starters after removing the previously chosen starter

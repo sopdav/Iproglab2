@@ -1,5 +1,4 @@
 var TotalCostView = function(container, model) {
-
 	// Get the wanted elements, the ones that have changed due to the interaction
 	this.starter = container.find("#starter");
 	this.main = container.find("#main");
@@ -16,11 +15,15 @@ var TotalCostView = function(container, model) {
 	this.totalCost = container.find("#totalCost");
 	this.printRecipeButton = container.find("#printRecipeButton");
 
+
 	// Called function when something changes in the model
 
 	this.update = function(object) {
-		for (var i = 0; i < model.getFullMenu.length; i++) {
+
+		for (var i = 0; i < model.getFullMenu().length; i++) {
 			var dish = model.getFullMenu()[i];
+
+
 
 			if (dish.type == 'starter') {
 				this.starter.attr('scr' + 'images/' + dish.image);

@@ -49,6 +49,7 @@ var DinnerModel = function() {
 		for(key in menu){
 			fullmenulist.push(this.getDish(menu[key]));
 		}
+		//console.log(fullmenulist);
 		return fullmenulist;
 		notifyObservers();
 	}
