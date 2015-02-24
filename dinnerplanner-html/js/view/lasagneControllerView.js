@@ -8,11 +8,13 @@ var LasagneControllerView = function(view,model){
 	});
 
 	$('#confimDishButton').click(function(){
+
 			$('#lasagneView').hide();
 			$('#selectDishView').show();
 			$('#mainbar').show();
-
 			model.addDishToMenu(view.dish.id);
+			
+			
 
 			if(view.dish.type == 'starter'){
 				$('#starterRow').show();
@@ -35,6 +37,8 @@ var LasagneControllerView = function(view,model){
 
 			}
 
+
 	});
+
 
 }

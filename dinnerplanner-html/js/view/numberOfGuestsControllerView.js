@@ -5,7 +5,7 @@ var NumberOfGuestsControllerView = function(view, model) {
 		$('#lasagneView').hide();			// dishdescription
 		$('#selectDishView').show();		// selectdish
 		$('#numberOfGuestsView').hide();	// numberofguests
-		$('totalCostView').hide();			// summary
-		$('finalView').hide();				// instructionsView
+		$('#totalCostView').hide();			// summary
+		$('#finalView').hide();				// instructionsView
 	});
 }

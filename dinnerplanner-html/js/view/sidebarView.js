@@ -4,7 +4,7 @@ var SidebarView = function(container, model) {
 
 	this.numberOfGuests = container.find("#numberOfGuests");
 	this.editGuestNumber = container.find("#editGuestNumber");
-	this.div = container.find("#selectDishView");
+	this.div = container.find("#sidebarView");
 	this.confirmButton = container.find("#confirmButton");
 	this.starterItem = container.find("#starterItem");
 	this.starterItemCost = container.find("#starterItemCost");
@@ -42,6 +42,8 @@ var SidebarView = function(container, model) {
 		this.starterItem.html(model.getSelectedDish('starter'));
 		this.mainItem.html(model.getSelectedDish('main dish'));
 		this.dessertItem.html(model.getSelectedDish('dessert'));
+
+
 	}
 
 	this.update();

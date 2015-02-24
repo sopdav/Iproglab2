@@ -24,27 +24,31 @@ var TotalCostView = function(container, model) {
 			var dish = model.getFullMenu()[i];
 
 
-
 			if (dish.type == 'starter') {
-				this.starter.attr('scr' + 'images/' + dish.image);
+				this.starter.attr('src', 'images/' +dish.image);
 				this.starterName.html(dish.name);
 				this.starterCost.html(model.getDishCost(dish) + ' SEK');
 			};
 
 			if (dish.type == 'main dish') {
-				this.main.attr('scr' + 'images/' + dish.image);
+				this.main.attr('src', 'images/' +dish.image);
 				this.mainName.html(dish.name);
 				this.mainCost.html(model.getDishCost(dish) + ' SEK');
 			};
 
 			if (dish.type == 'dessert') {
-				this.dessert.attr('scr' + 'images/' + dish.image);
+				this.dessert.attr('src', 'images/' +dish.image);
 				this.dessertName.html(dish.name);
 				this.dessertCost.html(model.getDishCost(dish) + ' SEK');
 			};
 		};
 	this.totalCost.html(model.getTotalMenuPrice());
 	}
+
+
+
+
+
 
 	/*****
 
@@ -55,6 +59,7 @@ var TotalCostView = function(container, model) {
 	*****/
 
 	model.addObserver(this);
+	
 
 	this.update();
 }
