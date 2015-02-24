@@ -14,7 +14,7 @@
   </head>
 
   <body>
-  	<div class="title">HOMELETTE <small><em>From the best chefs in the world directly to your kitchen</em></small></div>
+  	<div class="title">HOMELETTE &nbsp;&nbsp;<small class="sublead"><em>From the best chefs in the world directly to your kitchen</em></small></div>
 
 
   	<!--First page view-->
@@ -47,14 +47,16 @@
 
 		<div id="sidebarView" style="display:none;">
 			<div class="col-xs-6 col-sm-3">
+				<br>
 				<div>My Dinner<br>
 					People
 
 					<input type="number" id="editGuestNumber" value="3" min="1"/>
 				</div>	
 
+				<br>
 				<table class="table" id="menu-table">
-					<thead>
+					<thead style="background-color:#B6B6B4">
 						<th>Dish Name</th>
 						<th>Cost</th>
 					</thead>
@@ -147,7 +149,7 @@
     	<div class="row">
         <div class="col-md-6">	
              <h2 id="dishName"></h2>
-             <img id="dishImg">
+             <img id="dishImg" width="300px" height="300px">
              <br>
              <button id="backToSelectDish" style="background-color:#EFDC97" class="btn" type="button">Back to select dish</button>
              <h2>PREPARATION</h2>
@@ -185,19 +187,19 @@
 					<div id="images">
 						<a>
 							<img id="starter" width="150px" height="150px">
-							<div class="caption"><span id="starterName">No starter</span></div>
+							<div class="caption" style="background-color:#B6B6B4"><span id="starterName">No starter</span></div>
 							<div class="caption"><span id="starterCost">0.00 SEK</span></div>
 						</a>
 
 						<a>
 							<img id="main" width="150px" height="150px">
-							<div class="caption"><span id="mainName">No main</span></div>
+							<div class="caption" style="background-color:#B6B6B4"><span id="mainName">No main</span></div>
 							<div class="caption"><span id="mainCost">0.00 SEK</span></div>
 						</a>
 
 						<a>
 							<img id="dessert" width="150px" height="150px">
-							<div class="caption"><span id="dessertName">No dessert</span></div>
+							<div class="caption" style="background-color:#B6B6B4"><span id="dessertName">No dessert</span></div>
 							<div class="caption"><span id="dessertCost">0.00 SEK</span></div>
 						</a>
 					</div>
@@ -211,7 +213,7 @@
 			<div class="col-xs-4 col-sm-4">
 			</div>
 
-			<div class="col-xs-4 col-sm-4">
+			<div class="col-xs-4 col-sm-8">
 				 <button id="printRecipeButton" class="btn" style="background-color:#EFDC97" type="button" >Print Full Recipe</button>
 			</div>
 

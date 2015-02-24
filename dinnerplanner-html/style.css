@@ -108,6 +108,10 @@ a{
 a:link{
 	text-decoration: none;
 }
+#recipeB{
+	padding-bottom: 100px;
+	padding-left: 50px;
+}
 
 
 /*.confirmbutton {
@@ -154,8 +158,9 @@ a:link{
 }
 
 .sublead {
-	font-size: 20px;
+	font-size: 30px;
 	font-style: italic;
+	color: #B6B6B4;
 }
 .summaryfigure img { 
 	display: inline-block; 
@@ -165,6 +170,8 @@ a:link{
 	border-color: black;
 	border-style: solid;
 }
+
+
 
 
 
