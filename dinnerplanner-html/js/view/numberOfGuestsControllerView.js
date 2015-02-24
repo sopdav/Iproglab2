@@ -1,6 +1,5 @@
 var NumberOfGuestsControllerView = function(view, model) {
 	$(".editButton").click(function() {
-		alert("inne");
 		$('#mainbar').show();				// searchbar
 		$('#sidebarView').show();			// sidebar
 		$('#lasagneView').hide();			// dishdescription
