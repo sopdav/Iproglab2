@@ -75,6 +75,10 @@ html, body {
 	background-color: #FC6;
 }
 
+#headerMyDinner {
+	display: inline-block;
+}
+
 #sidebarView {
 	border-right: inset;
 	height: 50%;
