@@ -315,17 +315,17 @@ var DinnerModel = function() {
 		'image':'salmon.jpg',
 		'description':"Here is how you make it... Lore ipsum...",
 		'ingredients':[{ 
-			'name':'ingredient 1',
+			'name':'Salmon',
 			'quantity':1,
 			'unit':'pieces',
 			'price':8
 			},{
-			'name':'ingredient 2',
+			'name':'Salt',
 			'quantity':15,
 			'unit':'g',
 			'price':7
 			},{
-			'name':'ingredient 3',
+			'name':'Pepper',
 			'quantity':10,
 			'unit':'ml',
 			'price':4
@@ -337,17 +337,17 @@ var DinnerModel = function() {
 		'image':'ribs.jpg',
 		'description':"Here is how you make it... Lore ipsum...",
 		'ingredients':[{ 
-			'name':'ingredient 1',
+			'name':'Ribs',
 			'quantity':2,
 			'unit':'pieces',
 			'price':8
 			},{
-			'name':'ingredient 2',
+			'name':'Barbecue sauce',
 			'quantity':10,
 			'unit':'g',
 			'price':7
 			},{
-			'name':'ingredient 3',
+			'name':'Ketchup',
 			'quantity':5,
 			'unit':'ml',
 			'price':4
@@ -359,17 +359,17 @@ var DinnerModel = function() {
 		'image':'chicken.jpg',
 		'description':"Here is how you make it... Lore ipsum...",
 		'ingredients':[{ 
-			'name':'ingredient 1',
+			'name':'chicken',
 			'quantity':1,
 			'unit':'pieces',
 			'price':4
 			},{
-			'name':'ingredient 2',
+			'name':'butter',
 			'quantity':12,
 			'unit':'g',
 			'price':7
 			},{
-			'name':'ingredient 3',
+			'name':'rosemary',
 			'quantity':6,
 			'unit':'ml',
 			'price':4
