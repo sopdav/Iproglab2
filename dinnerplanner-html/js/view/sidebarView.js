@@ -38,11 +38,12 @@ var SidebarView = function(container, model) {
 		this.main = model.getSelectedDish('main dish');
 		this.dessert = model.getSelectedDish('dessert');
 
-		// now we'd like to update the courses
-		this.starterItem.html(model.getSelectedDish('starter'));
-		this.mainItem.html(model.getSelectedDish('main dish'));
-		this.dessertItem.html(model.getSelectedDish('dessert'));
 
+
+		// now we'd like to update the courses
+		this.starterItem.html(model.getDishName('starter'));
+		this.mainItem.html(model.getDishName('main dish'));
+		this.dessertItem.html(model.getDishName('dessert'));
 
 	}
 

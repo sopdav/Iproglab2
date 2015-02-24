@@ -7,8 +7,8 @@ var SidebarControllerView = function(view, model) {
 
 	// Handles the confirm button
 	// Shows numberOfGuestsView + totalCostView
-	view.confirmButton.click(function() {
-		$('#sidebarView').show();
+	$('#confirmButton').click(function() {
+		$('#sidebarView').hide();
 		$('#mainbar').hide();
 		$('#lasagneView').hide();
 		$('#selectDishView').hide();

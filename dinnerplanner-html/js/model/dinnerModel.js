@@ -29,18 +29,13 @@ var DinnerModel = function() {
 		return parseInt(numguests);
 	}
 
-	//Returns the dish that is on the menu for selected type 
+	//Returns the dish that is on the menu for the selected type 
 	this.getSelectedDish = function(type) {
 		return menu[type];
-		//var typelist = [];
+		notifyObservers();
 
-		//for(key in dishes){
-			//if(dishes[key].type == type){
-				//typelist.push(dishes[key].name);
-			//}
-		//}
-		//return typelist;
 	}
+
 
 	//Returns all the dishes on the menu 
 	this.getFullMenu = function() {
@@ -110,6 +105,7 @@ var DinnerModel = function() {
 	//it is removed from the menu and the new one added.
 	this.addDishToMenu = function(id) {
 		menu[this.getDish(id).type]=id;
+		console.log(menu);
 		notifyObservers();
 
 	}
@@ -121,6 +117,7 @@ var DinnerModel = function() {
 		if(menu[type] == id) {
 			delete menu[type];
 		}
+
 		notifyObservers();
 	}
 
@@ -155,6 +152,13 @@ var DinnerModel = function() {
 				return dishes[key];
 			}
 		}
+	}
+
+	this.getDishName = function(type){
+		if(menu[type] != undefined){
+		return menu[type].name;
+	}
+
 	}
 
 
