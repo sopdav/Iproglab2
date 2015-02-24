@@ -1,12 +1,13 @@
-var lasagneControllerView = function(view,model){
+var LasagneControllerView = function(view,model){
 
-	view.backToSelectDish.click(function(){
+	//view.backToSelectDish.click(function(){
+	$('#backToSelectDish').click(function(){
 		$('#lasagneView').hide();
 		$('#selectDishView').show();
 		$('#mainbar').show();
 	});
 
-	view.confirmDishButton.click(function(){
+	$('#confimDishButton').click(function(){
 			$('#lasagneView').hide();
 			$('#selectDishView').show();
 			$('#mainbar').show();
@@ -35,4 +36,5 @@ var lasagneControllerView = function(view,model){
 			}
 
 	});
+
 }

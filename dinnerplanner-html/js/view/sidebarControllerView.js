@@ -13,7 +13,7 @@ var SidebarControllerView = function(view, model) {
 		$('#lasagneView').hide();
 		$('#selectDishView').hide();
 		$('#numberOfGuestsView').show();
-		$('totalCostView').show();
+		$('#totalCostView').show();
 	});
 
 	// Handles the remove starter button in the sidebar

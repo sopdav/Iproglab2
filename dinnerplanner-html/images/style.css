@@ -1,0 +1,163 @@
+html, body {
+ 	font-family: Helvetica;
+}
+
+.title {
+	background-color: #EFDC97;
+ 	display: block;
+	font-size: 40px;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	text-align: center;
+}
+
+/* FÖRSTA SIDAN*/
+
+#firstpageView {
+	background: url('images/family.jpg') no-repeat center center;
+	background-size: cover;
+
+    text-align: left;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 130px;
+
+    z-index: -1;
+}
+
+/*ANDRA SIDAN*/
+
+/*#sidebarView {
+	border-right: inset;
+	height: 50%
+
+}*/
+
+/*#mainbarView {
+	background-color: #EFDC97;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	color: black;
+	padding-left: 200px;
+	display:none;
+    float: center;
+}*/
+
+
+/*#selectDishView {
+	background-color: white;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	color: black;
+	padding-left: 325px;
+
+    float: center;
+}*/
+
+#finalView{
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+#numberOfGuestsView{
+	background-color: #FC6;
+}
+
+#sidebarView {
+	border-right: inset;
+	height: 50%;
+}
+
+#lasagneView {
+	width: 350px;
+	font-weight: normal;
+}
+
+#images{
+    text-align:center;
+    margin:50px auto;
+}
+
+#mainbar{
+	display:block;
+}
+
+#images a{
+    margin:0px 20px;
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+}
+
+a{
+	color: black;
+	opacity: 1.5;
+}
+a:link{
+	text-decoration: none;
+}
+
+
+/*.confirmbutton {
+	position: absolute;
+	left: 2.9%;
+}
+
+.confirmbutton1 {
+	position: absolute;
+	left: 17%;
+}
+
+
+.confirmbutton2 {
+	position: absolute;
+	left: 40%;
+	width: 300px;
+	height: 60px;
+	font-weight: bold;
+	display:none;
+}
+
+
+
+.editbutton {
+	font-size: 15px;
+	position: absolute;
+	left: 80%;
+	right: 0%;
+	top: 10%;
+
+}*/
+
+.line1{
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+}
+
+.side-container {
+	padding: 9px 0;
+    left:20px;
+    top:60px;
+    width:20%;
+}
+
+.sublead {
+	font-size: 20px;
+	font-style: italic;
+}
+.summaryfigure img { 
+	display: inline-block; 
+	vertical-align: middle; 
+}
+
+
+
+

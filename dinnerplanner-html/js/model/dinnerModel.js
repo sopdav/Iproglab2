@@ -31,7 +31,6 @@ var DinnerModel = function() {
 
 	//Returns the dish that is on the menu for selected type 
 	this.getSelectedDish = function(type) {
-
 		return menu[type];
 		//var typelist = [];
 
@@ -306,9 +305,9 @@ var DinnerModel = function() {
 			}]
 		},{
 		'id':101,
-		'name':'MD 2',
+		'name':'Salmon',
 		'type':'main dish',
-		'image':'bakedbrie.jpg',
+		'image':'salmon.jpg',
 		'description':"Here is how you make it... Lore ipsum...",
 		'ingredients':[{ 
 			'name':'ingredient 1',
@@ -328,9 +327,9 @@ var DinnerModel = function() {
 			}]
 		},{
 		'id':102,
-		'name':'MD 3',
+		'name':'Ribs',
 		'type':'main dish',
-		'image':'meatballs.jpg',
+		'image':'ribs.jpg',
 		'description':"Here is how you make it... Lore ipsum...",
 		'ingredients':[{ 
 			'name':'ingredient 1',
@@ -350,9 +349,9 @@ var DinnerModel = function() {
 			}]
 		},{
 		'id':102,
-		'name':'MD 4',
+		'name':'Chicken',
 		'type':'main dish',
-		'image':'meatballs.jpg',
+		'image':'chicken.jpg',
 		'description':"Here is how you make it... Lore ipsum...",
 		'ingredients':[{ 
 			'name':'ingredient 1',

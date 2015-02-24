@@ -59,17 +59,17 @@
 						<th>Cost</th>
 					</thead>
 					<tbody class="table-striped">
-						<tr id="starterRow" style="display:none;">
+						<tr id="starterRow">
 							<td id="starterItem">Starter</td>
 							<td id="starterItemCost">0.00</td>
 							<td><button id="removeStarterButton">x</button>
 						</tr>
-						<tr id="mainRow" style="dislay:none;">
+						<tr id="mainRow">
 							<td id="mainItem">Main</td>
 							<td id="mainItemCost">0.00</td>
 							<td><button id="removeMainButton">x</button>
 						</tr>
-						<tr id="dessertRow" style="display:none">
+						<tr id="dessertRow">
 							<td id="dessertItem">Dessert</td>
 							<td id="dessertItemCost">0.00</td>
 							<td><button id="removeDessertButton">x</button>
@@ -139,7 +139,7 @@
 
     <div class="col-md-9" id="lasagneView" style="display:none;">
         <div class="col-md-3">
-        	<button id="backToSelectDish" class="btn btn-warning" role="button">Back to select dish</button>
+        	<button id="backToSelectDish" class="btn btn-warning" type="button">Back to select dish</button>
         		
                 <h2 id="dishName"></h2>
                 <img id="dishImg">
@@ -150,7 +150,7 @@
 
         <div class="col-md-offset-7">
         	<h2>Ingredients for <span id="numberOfGuests"></span> people</h2>
-        	<div id="ingriendslist">
+        	<div id="ingredientslist">
         	</div>
 
         	<br><br>

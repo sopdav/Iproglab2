@@ -1,4 +1,4 @@
-var finalView = function (view, model){
+var FinalView = function (container, model){
 
 
 
