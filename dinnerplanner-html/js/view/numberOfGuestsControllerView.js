@@ -1,5 +1,6 @@
 var NumberOfGuestsControllerView = function(view, model) {
-	view.editButton.click(function() {
+	$( '#editButton' ).click(function() {
+		alert("messageinnumguest");
 		$('#mainbar').show();				// searchbar
 		$('#sidebarView').show();			// sidebar
 		$('#lasagneView').hide();			// dishdescription

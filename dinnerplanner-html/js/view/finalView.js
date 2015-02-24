@@ -1,6 +1,6 @@
 var FinalView = function (container, model){
 
-
+	alert("FinalView here");
 
 	this.starterImg = container.find("#starterImg");
 	this.starterName = container.find("#starterName");
