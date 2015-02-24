@@ -22,6 +22,7 @@ var TotalCostView = function(container, model) {
 
 		for (var i = 0; i < model.getFullMenu().length; i++) {
 			var dish = model.getFullMenu()[i];
+			alert("totalCost");
 
 
 			if (dish.type == 'starter') {
@@ -44,11 +45,6 @@ var TotalCostView = function(container, model) {
 		};
 	this.totalCost.html(model.getTotalMenuPrice());
 	}
-
-
-
-
-
 
 	/*****
 

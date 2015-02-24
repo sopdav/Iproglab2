@@ -1,5 +1,5 @@
 var NumberOfGuestsView = function(container, model) {
-
+	alert("numberOfGuests");
 	// Get info from the elements of the view, the ones that have responded to the interaction, that is.
 	this.numberOfGuests = container.find("#numberOfGuests");
 	this.editButton = container.find("#editButton");
@@ -20,4 +20,6 @@ var NumberOfGuestsView = function(container, model) {
 	this.update = function(object) {
 		this.numberOfGuests.html(model.getNumberOfGuests());
 	}
+
+	this.update();
 }

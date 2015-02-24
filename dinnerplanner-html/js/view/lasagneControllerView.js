@@ -7,7 +7,7 @@ var LasagneControllerView = function(view,model){
 		$('#mainbar').show();
 	});
 
-	$('#confimDishButton').click(function(){
+	$("#confimDishButton").click(function(){
 
 			$('#lasagneView').hide();
 			$('#selectDishView').show();
