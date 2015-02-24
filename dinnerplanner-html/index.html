@@ -39,7 +39,7 @@
 						<td> <br> Start Quickly <br> </td>		
 					</tr> 
 				</table>
-				<button id="createNewDinner" type="button" style="background-color:#EFDC97">Create new dinner</button>
+				<button id="createNewDinner" type="button" class="btn" style="background-color:#EFDC97">Create new dinner</button>
 		</div>	
 	</div>
 
@@ -62,17 +62,17 @@
 						<tr id="starterRow">
 							<td id="starterItem">Starter</td>
 							<td id="starterItemCost">0.00</td>
-							<td><button id="removeStarterButton">x</button></td>
+							<td><button class="btn" id="removeStarterButton">x</button></td>
 						</tr>
 						<tr id="mainRow">
 							<td id="mainItem">Main</td>
 							<td id="mainItemCost">0.00</td>
-							<td><button id="removeMainButton">x</button></td>
+							<td><button class="btn" id="removeMainButton">x</button></td>
 						</tr>
 						<tr id="dessertRow">
 							<td id="dessertItem">Dessert</td>
 							<td id="dessertItemCost">0.00</td>
-							<td><button id="removeDessertButton">x</button></td>
+							<td><button class="btn" id="removeDessertButton">x</button></td>
 						</tr>
 						<tr>
 							<td id="total" style="text-align:right">SEK</td>
@@ -81,7 +81,7 @@
 					</tbody>
 				</table>
 
-				<button type="button" style="background-color:#EFDC97; color:#68625E" id="confirmButton">Confirm Dinner </button>
+				<button type="button" class="btn" style="background-color:#EFDC97; color:#68625E" id="confirmButton">Confirm Dinner </button>
 
 		</div>
 	</div>
@@ -135,7 +135,7 @@
 				<h2>My Dinner: <span  id="numberOfGuests"></span>&nbsp;People </h2>
 			</div>
 			<div class="col-md-3 col-md-offset-2">
-				<button class="editButton" style="background-color:#EFDC97; float:right;" type="button">Go back and edit dinner</button>
+				<button class="btn" id="editButton" style="background-color:#EFDC97; float:right;" type="button">Go back and edit dinner</button>
 			</div>	
 		</div>
 	</div>		
@@ -149,7 +149,7 @@
              <h2 id="dishName"></h2>
              <img id="dishImg">
              <br>
-             <button id="backToSelectDish" style="background-color:#EFDC97" type="button">Back to select dish</button>
+             <button id="backToSelectDish" style="background-color:#EFDC97" class="btn" type="button">Back to select dish</button>
              <h2>PREPARATION</h2>
              <p id="dishPrep" style="width:500px"></p>
         </div>
@@ -162,7 +162,7 @@
         	<br><br>
 
         	<div style="padding-left:40px;">
-        		<button id="confimDishButton" type="button" style="background-color:#EFDC97">Confirm Dish </button>
+        		<button id="confimDishButton" type="button" class="btn" style="background-color:#EFDC97">Confirm Dish </button>
         		<span id="priceCounter"></span>
         	</div>
         </div>
@@ -212,7 +212,7 @@
 			</div>
 
 			<div class="col-xs-4 col-sm-4">
-				 <button id="printRecipeButton" class="confirmbutton2" style="background-color:#EFDC97" type="button" >Print Full Recipe</button>
+				 <button id="printRecipeButton" class="btn" style="background-color:#EFDC97" type="button" >Print Full Recipe</button>
 			</div>
 
 			<div class="col-xs-4 col-sm-4">

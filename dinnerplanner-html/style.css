@@ -161,6 +161,10 @@ a:link{
 	display: inline-block; 
 	vertical-align: middle; 
 }
+.btn{
+	border-color: black;
+	border-style: solid;
+}
 
 
 
